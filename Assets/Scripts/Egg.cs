@@ -1,0 +1,111 @@
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using System;
+using Microsoft.Unity.VisualStudio.Editor;
+using UnityEngine.UI;
+using UnityEngine.Rendering.Universal;
+
+public class Egg : MonoBehaviour
+{
+    protected enum EggStatusIndex
+    {
+        UNBROKEN = 0,
+        RAW = 1,
+        HALF = 2,
+        COOKED = 3,
+        BURNT = 4, 
+        NO_EGG = 5
+    }
+    [SerializeField] private Sprite[] egg_status_image = new Sprite[5];
+    private List<int> topping; 
+    protected EggStatusIndex egg_status; 
+    private float time_elapsed; 
+    private bool is_frypan_available; 
+    private float cooking_speed; 
+    private bool is_toppings_selectable = false;
+    private GameObject egg_gobj;
+    private bool is_egg_prepared = false;
+    private bool is_new_egg_usable = false;
+    private bool is_timer_working = false;
+    protected static bool is_cooking = false;
+    private const float standard_time_per_status = 15.0f;
+    
+    void Start()
+    {
+        egg_gobj = this.gameObject.transform.Find("egg").gameObject;
+        SwitchEggStatus(EggStatusIndex.NO_EGG);
+        is_egg_prepared = false;
+        is_new_egg_usable = true;
+        is_toppings_selectable = false;
+        is_timer_working = false;
+        is_cooking = false;
+    }
+
+    void Update()
+    {
+        if (!is_new_egg_usable)
+        {
+            return;
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (is_egg_prepared)
+            {
+                SwitchEggStatus(EggStatusIndex.RAW);
+                is_egg_prepared = false;
+                is_new_egg_usable = false;
+                is_toppings_selectable = false;
+                is_timer_working = true;
+                is_cooking = true;
+                StartCoroutine(Timer());
+            }
+            else
+            {
+                SwitchEggStatus(EggStatusIndex.UNBROKEN);
+                is_egg_prepared = true;
+            }
+        }
+        // else if (Input.anyKey)
+        // {
+        //     if (egg_status == EggStatusIndex.UNBROKEN)
+        //     {
+        //         SwitchEggStatus(EggStatusIndex.NO_EGG);
+        //     }
+        //     is_egg_prepared = false;
+        // }
+    }
+
+    protected void SwitchEggStatus(EggStatusIndex new_status){
+        egg_status = new_status;
+        if (!egg_gobj){
+            egg_gobj = this.gameObject.transform.Find("egg").gameObject;
+        }
+        UnityEngine.UI.Image egg_img = egg_gobj.GetComponent<UnityEngine.UI.Image>();
+        RectTransform egg_rt = egg_gobj.GetComponent<RectTransform>();
+        egg_img.SetNativeSize();
+        if (new_status == EggStatusIndex.NO_EGG)
+        {
+            egg_img.enabled = false;
+        }
+        else
+        {
+            egg_img.enabled = true;
+            egg_img.sprite = egg_status_image[(int)new_status];
+            print("Reached ln91");
+            if (egg_rt != null)
+            {
+                egg_rt.localScale = new Vector3(0.4f, 0.4f, 0.4f);
+            }
+        }
+    }
+
+    private IEnumerator Timer()
+    {
+        float starting_time = Time.time;
+        // while (is_timer_working){
+        //     time_elapsed = Time.time - starting_time;
+        // }
+        yield return null;
+    }
+}
