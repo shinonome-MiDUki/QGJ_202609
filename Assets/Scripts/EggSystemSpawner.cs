@@ -19,7 +19,7 @@ public class EggSystemSpawner : MonoBehaviour
         {
             GameObject egg_system_inst = Instantiate(
                 egg_system_prefab, 
-                new Vector3(520.0f + (i * 530.0f), 500.0f, 0.0f), 
+                new Vector3(520.0f + (i * 530.0f), 550.0f, 0.0f), 
                 Quaternion.identity, this.transform
             );
             egg_system_inst.name = "egg_system_" + i.ToString();

@@ -1,9 +1,11 @@
+using System;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ToppingsScatterManager : Egg
 {
-    private EggCommonParam param;
+    [SerializeField] private EggCommonParam param;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected override void Start()
     {
@@ -29,11 +31,29 @@ public class ToppingsScatterManager : Egg
 
     private void OnEggClicked()
     {
+        string current_parent_gobj_name = this.transform.parent.parent.gameObject.name;
+        bool is_parsed = int.TryParse(current_parent_gobj_name.Split('_').Last(), out int my_idx);
+        my_idx = is_parsed ? my_idx : 0;
+
+        if (applied_toppings.Contains((int)param.current_active_topping)){
+            return;
+        }
+        if (egg_status[my_idx] == EggStatusIndex.NO_EGG || egg_status[my_idx] == EggStatusIndex.UNBROKEN)
+        {
+            return;
+        }
+
+        if (!is_focused[my_idx])
+        {
+            return;
+        }
         if (param.current_active_topping == EggCommonParam.ToppingsType.NONE)
         {
             return;
         }
+
         AddTopping(param.current_active_topping);
         applied_toppings.Add((int)param.current_active_topping);
+        param.current_active_topping = EggCommonParam.ToppingsType.NONE;
     }
 }

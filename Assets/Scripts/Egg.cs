@@ -8,10 +8,11 @@ using UnityEngine.UI;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.InputSystem.Controls;
 using NUnit.Framework;
+using Unity.VisualScripting;
 
 public class Egg : MonoBehaviour
 {
-    protected enum EggStatusIndex
+    public enum EggStatusIndex
     {
         UNBROKEN = 0,
         RAW = 1,
@@ -21,8 +22,8 @@ public class Egg : MonoBehaviour
         NO_EGG = 5
     }
     [SerializeField] private Sprite[] egg_status_image = new Sprite[5];
-    protected List<int> applied_toppings; 
-    protected EggStatusIndex egg_status; 
+    protected List<int> applied_toppings = new List<int>(); 
+    // protected EggStatusIndex egg_status; 
     private float time_elapsed; 
     private bool is_frypan_available; 
     private float cooking_speed; 
@@ -33,6 +34,7 @@ public class Egg : MonoBehaviour
     private bool is_timer_working = false;
     protected static bool[] is_cooking = new bool[3];
     public static bool[] is_focused = new bool[3];
+    protected static EggStatusIndex[] egg_status = new EggStatusIndex[3]; 
 
 
     protected virtual void Start()
@@ -89,7 +91,7 @@ public class Egg : MonoBehaviour
     }
 
     protected void SwitchEggStatus(EggStatusIndex new_status){
-        egg_status = new_status;
+        egg_status[GetMyIdx()] = new_status;
         if (!egg_gobj){
             egg_gobj = this.gameObject.transform.Find("egg").gameObject;
         }
@@ -109,15 +111,6 @@ public class Egg : MonoBehaviour
                 egg_rt.localScale = new Vector3(0.2f, 0.2f, 0.2f);
             }
         }
-    }
-
-    private IEnumerator Timer()
-    {
-        float starting_time = Time.time;
-        // while (is_timer_working){
-        //     time_elapsed = Time.time - starting_time;
-        // }
-        yield return null;
     }
 
     public void SetFocus(bool do_focus)

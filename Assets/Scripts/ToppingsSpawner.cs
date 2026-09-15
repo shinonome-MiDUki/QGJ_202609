@@ -24,17 +24,10 @@ public class ToppingsSpawner : MonoBehaviour
             RectTransform btn_rt = topping_inst.GetComponent<RectTransform>();
             if (btn_rt != null)
             {
-                btn_rt.anchoredPosition = new Vector3(130.0f, i * -170.0f + 960.0f, 0.0f);
+                btn_rt.anchoredPosition = new Vector3(130.0f, i * -150.0f + 960.0f, 0.0f);
                 btn_rt.localScale = new Vector3(0.3f, 0.3f, 0.3f);
             }
-
-            Button topping_btn = topping_inst.GetComponent<Button>();
-            topping_btn.onClick.AddListener(() => TEST(i));
         }
     }
 
-    public void TEST(int i)
-    {
-        Debug.Log(i.ToString() + "@@@@@");
-    }
 }

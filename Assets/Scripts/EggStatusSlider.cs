@@ -34,16 +34,16 @@ public class EggStatusSlider : Egg
         status_slider.value += standard_increment * speed_factor;
 
         float current_factor = status_slider.value;
-        if (current_factor >= 0.0f && current_factor < 0.25f && egg_status != EggStatusIndex.RAW){
+        if (current_factor >= 0.0f && current_factor < 0.25f && egg_status[GetMyIdx()] != EggStatusIndex.RAW){
             SwitchEggStatus(EggStatusIndex.RAW);
         }
-        else if (current_factor >= 0.25f && current_factor < 0.5f && egg_status != EggStatusIndex.HALF){
+        else if (current_factor >= 0.25f && current_factor < 0.5f && egg_status[GetMyIdx()] != EggStatusIndex.HALF){
             SwitchEggStatus(EggStatusIndex.HALF);
         }
-        else if (current_factor >= 0.5f && current_factor < 0.75f && egg_status != EggStatusIndex.COOKED){
+        else if (current_factor >= 0.5f && current_factor < 0.75f && egg_status[GetMyIdx()] != EggStatusIndex.COOKED){
             SwitchEggStatus(EggStatusIndex.COOKED);
         }
-        else if (current_factor >= 0.75f && current_factor < 1.0f && egg_status != EggStatusIndex.BURNT){
+        else if (current_factor >= 0.75f && current_factor < 1.0f && egg_status[GetMyIdx()] != EggStatusIndex.BURNT){
             SwitchEggStatus(EggStatusIndex.BURNT);
         }
         else if (current_factor >= 1.0f){

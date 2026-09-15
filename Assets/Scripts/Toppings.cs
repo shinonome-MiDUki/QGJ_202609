@@ -3,23 +3,26 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using System;
+using Unity.VisualScripting;
 
 public class Toppings : MonoBehaviour
 {
+    [SerializeField] private EggCommonParam param;
     void Start()
     {
         Button topping_btn = this.GetComponent<Button>();
-        //topping_btn.onClick.AddListener(() => OnClicked());
+        topping_btn.onClick.AddListener(OnClicked);
 
-        // EventTrigger topping_button_evt = topping_btn.gameObject.GetComponent<EventTrigger>();
-        // if (topping_button_evt == null)
-        // {
-        //     topping_button_evt = topping_btn.gameObject.AddComponent<EventTrigger>();
-        // }
-        // if (topping_button_evt.triggers == null)
-        // {
-        //     topping_button_evt.triggers = new List<EventTrigger.Entry>();
-        // }
+        EventTrigger topping_button_evt = topping_btn.gameObject.GetComponent<EventTrigger>();
+        if (topping_button_evt == null)
+        {
+            topping_button_evt = topping_btn.gameObject.AddComponent<EventTrigger>();
+        }
+        if (topping_button_evt.triggers == null)
+        {
+            topping_button_evt.triggers = new List<EventTrigger.Entry>();
+        }
 
         // EventTrigger.Entry entry_enter = new EventTrigger.Entry();
         // if (entry_enter == null)
@@ -39,33 +42,29 @@ public class Toppings : MonoBehaviour
         // entry_exit.callback.AddListener((data) => HideNote((PointerEventData)data));
         // topping_button_evt.triggers.Add(entry_exit);
 
-        // TMP_Text btn_text = topping_btn.GetComponentInChildren<TMP_Text>();
-        // btn_text.enabled = false;
+        TMP_Text btn_text = topping_btn.GetComponentInChildren<TMP_Text>();
+        btn_text.enabled = false;
     }
 
     private void OnClicked()
     {
-        Debug.Log("My name is " + this.name);
+        EggCommonParam.ToppingsType clicked_topping = (EggCommonParam.ToppingsType)Enum.Parse(typeof(EggCommonParam.ToppingsType), this.name);
+        param.current_active_topping = clicked_topping;        
     }
-    public void TEST()
+
+    private void ShowNote(PointerEventData data)
     {
-        Debug.Log("My name is " + this.name);
+        Button topping_btn = this.GetComponent<Button>();
+        TMP_Text btn_text = topping_btn.GetComponentInChildren<TMP_Text>();
+        btn_text.text = this.name;
+        btn_text.enabled = true;
     }
 
-
-    // private void ShowNote(PointerEventData data)
-    // {
-    //     Button topping_btn = this.GetComponent<Button>() ?? this.GetComponentInParent<Button>();
-    //     TMP_Text btn_text = topping_btn.GetComponentInChildren<TMP_Text>();
-    //     btn_text.text = this.name;
-    //     btn_text.enabled = true;
-    // }
-
-    // private void HideNote(PointerEventData data)
-    // {
-    //     Button topping_btn = this.GetComponent<Button>() ?? this.GetComponentInParent<Button>();
-    //     TMP_Text btn_text = topping_btn.GetComponentInChildren<TMP_Text>();
-    //     btn_text.enabled = false;
-    // }
+    private void HideNote(PointerEventData data)
+    {
+        Button topping_btn = this.GetComponent<Button>();
+        TMP_Text btn_text = topping_btn.GetComponentInChildren<TMP_Text>();
+        btn_text.enabled = false;
+    }
 
 }
