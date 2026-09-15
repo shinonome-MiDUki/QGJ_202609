@@ -1,11 +1,13 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System;
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine.UI;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.InputSystem.Controls;
+using NUnit.Framework;
 
 public class Egg : MonoBehaviour
 {
@@ -29,15 +31,10 @@ public class Egg : MonoBehaviour
     private bool is_egg_prepared = false;
     private bool is_new_egg_usable = false;
     private bool is_timer_working = false;
-    protected EggSystemData eggSystemData;
+    //protected EggSystemData eggSystemData;
+    protected static bool[] is_cooking = new bool[3];
+    public static bool[] is_focused = new bool[3];
 
-    public bool is_cooking = false;
-    public bool is_focused = false;
-
-    void Awake()
-    {
-        eggSystemData = new EggSystemData();
-    }
 
     protected virtual void Start()
     {
@@ -47,14 +44,14 @@ public class Egg : MonoBehaviour
         is_new_egg_usable = true;
         is_toppings_selectable = false;
         is_timer_working = false;
-        eggSystemData.is_cooking = false;
-        eggSystemData.is_focused = false;
+        is_cooking[GetMyIdx()] = false;
+        is_focused[GetMyIdx()] = false;
         
     }
 
     protected virtual void Update()
     {
-        if (!eggSystemData.is_focused)
+        if (!is_focused[GetMyIdx()])
         {
             return;
         }
@@ -72,7 +69,7 @@ public class Egg : MonoBehaviour
                 is_new_egg_usable = false;
                 is_toppings_selectable = false;
                 is_timer_working = true;
-                eggSystemData.is_cooking = true;
+                is_cooking[GetMyIdx()] = true;
                 //StartCoroutine(Timer());
             }
             else
@@ -82,6 +79,14 @@ public class Egg : MonoBehaviour
             }
         }
 
+    }
+
+
+    protected int GetMyIdx()
+    {
+        bool is_parsed = int.TryParse(this.name.Split('_').Last(), out int my_idx);
+        my_idx = is_parsed ? my_idx : 0;
+        return my_idx;
     }
 
     protected void SwitchEggStatus(EggStatusIndex new_status){
@@ -103,7 +108,7 @@ public class Egg : MonoBehaviour
             print("Reached ln91");
             if (egg_rt != null)
             {
-                egg_rt.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                egg_rt.localScale = new Vector3(0.2f, 0.2f, 0.2f);
             }
         }
     }
@@ -120,11 +125,11 @@ public class Egg : MonoBehaviour
     public void SetFocus(bool do_focus)
     {
         this.gameObject.transform.Find("ray").gameObject.SetActive(do_focus);
-        eggSystemData.is_focused = do_focus;
+        is_focused[GetMyIdx()] = do_focus;
     }
 
     public bool GetFocusStatus()
     {
-        return eggSystemData.is_focused;
+        return is_focused[GetMyIdx()];
     }
 }

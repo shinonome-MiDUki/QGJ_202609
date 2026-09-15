@@ -58,6 +58,6 @@ public class EggSystemSpawner : MonoBehaviour
         current_focus_idx += movement;
         current_focus = egg_systems[current_focus_idx];
         current_focus.GetComponent<Egg>().SetFocus(true);
-        
+        Debug.Log(current_focus_idx.ToString() + string.Join("  @@@, ", Egg.is_focused));
     }
 }

@@ -26,8 +26,8 @@ public class LensOperation : EggStatusSlider
     {
         base.Update();
 
-        print(eggSystemData.is_focused);
-        if (!eggSystemData.is_focused)
+        print(is_focused[GetMyIdx()]);
+        if (!is_focused[GetMyIdx()])
         {
             print("Unfocused");
             return;
