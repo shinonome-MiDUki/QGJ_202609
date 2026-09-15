@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class RaySpreading : BaseMeshEffect
 {
-    private static float ray_source = 200.0f;
-    private static float spreading = 1.0f;
+    private float ray_source = 200.0f;
+    private float spreading = 1.0f;
     public override void ModifyMesh(VertexHelper vh)
     {
         if (!IsActive())

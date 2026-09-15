@@ -6,7 +6,7 @@ public class EggStatusSlider : Egg
 {
     [SerializeField] private float play_time = 60.0f;
     private Slider status_slider;
-    private static float speed_factor;
+    private float speed_factor;
     
 
     void Start()
@@ -17,7 +17,12 @@ public class EggStatusSlider : Egg
 
     void Update()
     {
-        if (!is_cooking)
+        if (!eggSystemData.is_focused)
+        {
+            return;
+        }
+
+        if (!eggSystemData.is_cooking)
         {
             return;
         }
@@ -38,7 +43,7 @@ public class EggStatusSlider : Egg
             SwitchEggStatus(EggStatusIndex.BURNT);
         }
         else if (current_factor >= 1.0f){
-            is_cooking = false;
+            eggSystemData.is_cooking = false;
         }
     }
 

@@ -5,6 +5,7 @@ using System;
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine.UI;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.InputSystem.Controls;
 
 public class Egg : MonoBehaviour
 {
@@ -28,9 +29,13 @@ public class Egg : MonoBehaviour
     private bool is_egg_prepared = false;
     private bool is_new_egg_usable = false;
     private bool is_timer_working = false;
-    protected static bool is_cooking = false;
-    private const float standard_time_per_status = 15.0f;
-    
+    protected EggSystemData eggSystemData;
+
+    void Awake()
+    {
+        eggSystemData = new EggSystemData();
+    }
+
     void Start()
     {
         egg_gobj = this.gameObject.transform.Find("egg").gameObject;
@@ -39,11 +44,18 @@ public class Egg : MonoBehaviour
         is_new_egg_usable = true;
         is_toppings_selectable = false;
         is_timer_working = false;
-        is_cooking = false;
+        eggSystemData.is_cooking = false;
+        eggSystemData.is_focused = false;
+        
     }
 
     void Update()
     {
+        if (!eggSystemData.is_focused)
+        {
+            return;
+        }
+
         if (!is_new_egg_usable)
         {
             return;
@@ -57,8 +69,8 @@ public class Egg : MonoBehaviour
                 is_new_egg_usable = false;
                 is_toppings_selectable = false;
                 is_timer_working = true;
-                is_cooking = true;
-                StartCoroutine(Timer());
+                eggSystemData.is_cooking = true;
+                //StartCoroutine(Timer());
             }
             else
             {
@@ -66,14 +78,7 @@ public class Egg : MonoBehaviour
                 is_egg_prepared = true;
             }
         }
-        // else if (Input.anyKey)
-        // {
-        //     if (egg_status == EggStatusIndex.UNBROKEN)
-        //     {
-        //         SwitchEggStatus(EggStatusIndex.NO_EGG);
-        //     }
-        //     is_egg_prepared = false;
-        // }
+
     }
 
     protected void SwitchEggStatus(EggStatusIndex new_status){
@@ -107,5 +112,11 @@ public class Egg : MonoBehaviour
         //     time_elapsed = Time.time - starting_time;
         // }
         yield return null;
+    }
+
+    public void SetFocus(bool do_focus)
+    {
+        this.gameObject.transform.Find("ray").gameObject.SetActive(do_focus);
+        eggSystemData.is_focused = do_focus;
     }
 }

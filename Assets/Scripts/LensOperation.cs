@@ -23,6 +23,13 @@ public class LensOperation : EggStatusSlider
 
     void Update()
     {
+        if (!eggSystemData.is_focused)
+        {
+            print("Unfocused");
+            return;
+        }
+        print("Focused");
+
         if (!(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow)))
         {
             return;
