@@ -31,12 +31,15 @@ public class Egg : MonoBehaviour
     private bool is_timer_working = false;
     protected EggSystemData eggSystemData;
 
+    public bool is_cooking = false;
+    public bool is_focused = false;
+
     void Awake()
     {
         eggSystemData = new EggSystemData();
     }
 
-    void Start()
+    protected virtual void Start()
     {
         egg_gobj = this.gameObject.transform.Find("egg").gameObject;
         SwitchEggStatus(EggStatusIndex.NO_EGG);
@@ -49,7 +52,7 @@ public class Egg : MonoBehaviour
         
     }
 
-    void Update()
+    protected virtual void Update()
     {
         if (!eggSystemData.is_focused)
         {
@@ -100,7 +103,7 @@ public class Egg : MonoBehaviour
             print("Reached ln91");
             if (egg_rt != null)
             {
-                egg_rt.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+                egg_rt.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             }
         }
     }
@@ -118,5 +121,10 @@ public class Egg : MonoBehaviour
     {
         this.gameObject.transform.Find("ray").gameObject.SetActive(do_focus);
         eggSystemData.is_focused = do_focus;
+    }
+
+    public bool GetFocusStatus()
+    {
+        return eggSystemData.is_focused;
     }
 }

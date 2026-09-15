@@ -11,18 +11,22 @@ public class LensOperation : EggStatusSlider
     [SerializeField] private RaySpreading raySpreading;
     private GameObject lens_gobj;
 
-    void Start()
+    protected override void Start()
     {
-        lens_gobj = this.gameObject.transform.Find("lens").gameObject;
+        base.Start();
 
+        lens_gobj = this.gameObject.transform.Find("lens").gameObject;
         RectTransform lens_rt = lens_gobj.GetComponent<RectTransform>();
         Vector3 current_pos = lens_rt.anchoredPosition;
         float height = current_pos.y;
         CookingSpeedControl(height);
     }
 
-    void Update()
+    protected override void Update()
     {
+        base.Update();
+
+        print(eggSystemData.is_focused);
         if (!eggSystemData.is_focused)
         {
             print("Unfocused");

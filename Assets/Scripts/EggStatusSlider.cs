@@ -9,14 +9,18 @@ public class EggStatusSlider : Egg
     private float speed_factor;
     
 
-    void Start()
+    protected override void Start()
     {
+        base.Start();
+        
         speed_factor = 1.0f;
         status_slider = this.gameObject.transform.Find("status_bar").GetComponent<Slider>();
     }
 
-    void Update()
+    protected override void Update()
     {
+        base.Update();
+
         if (!eggSystemData.is_focused)
         {
             return;
@@ -36,10 +40,10 @@ public class EggStatusSlider : Egg
         else if (current_factor >= 0.25f && current_factor < 0.5f && egg_status != EggStatusIndex.HALF){
             SwitchEggStatus(EggStatusIndex.HALF);
         }
-        else if (current_factor >= 0.5f && current_factor < 0.75f && egg_status != EggStatusIndex.RAW){
+        else if (current_factor >= 0.5f && current_factor < 0.75f && egg_status != EggStatusIndex.COOKED){
             SwitchEggStatus(EggStatusIndex.COOKED);
         }
-        else if (current_factor >= 0.75f && current_factor < 1.0f && egg_status != EggStatusIndex.RAW){
+        else if (current_factor >= 0.75f && current_factor < 1.0f && egg_status != EggStatusIndex.BURNT){
             SwitchEggStatus(EggStatusIndex.BURNT);
         }
         else if (current_factor >= 1.0f){
