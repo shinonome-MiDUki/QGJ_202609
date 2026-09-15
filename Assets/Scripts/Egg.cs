@@ -21,7 +21,7 @@ public class Egg : MonoBehaviour
         NO_EGG = 5
     }
     [SerializeField] private Sprite[] egg_status_image = new Sprite[5];
-    private List<int> topping; 
+    protected List<int> applied_toppings; 
     protected EggStatusIndex egg_status; 
     private float time_elapsed; 
     private bool is_frypan_available; 
@@ -31,7 +31,6 @@ public class Egg : MonoBehaviour
     private bool is_egg_prepared = false;
     private bool is_new_egg_usable = false;
     private bool is_timer_working = false;
-    //protected EggSystemData eggSystemData;
     protected static bool[] is_cooking = new bool[3];
     public static bool[] is_focused = new bool[3];
 
@@ -105,7 +104,6 @@ public class Egg : MonoBehaviour
         {
             egg_img.enabled = true;
             egg_img.sprite = egg_status_image[(int)new_status];
-            print("Reached ln91");
             if (egg_rt != null)
             {
                 egg_rt.localScale = new Vector3(0.2f, 0.2f, 0.2f);

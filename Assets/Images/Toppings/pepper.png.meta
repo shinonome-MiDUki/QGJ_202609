@@ -1,0 +1,5200 @@
+fileFormatVersion: 2
+guid: f022632cb114e411cb0604ad8886356e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8374363231432968964
+    second: pepper_0
+  - first:
+      213: 6147143884469806800
+    second: pepper_1
+  - first:
+      213: -6481267220849109244
+    second: pepper_2
+  - first:
+      213: 5612642908841023623
+    second: pepper_3
+  - first:
+      213: 8301823172438506834
+    second: pepper_4
+  - first:
+      213: -64118370815911111
+    second: pepper_5
+  - first:
+      213: -6236560009743017251
+    second: pepper_6
+  - first:
+      213: -559447805561852844
+    second: pepper_7
+  - first:
+      213: 437857129786953456
+    second: pepper_8
+  - first:
+      213: -4912888683908035195
+    second: pepper_9
+  - first:
+      213: 4896040754321960488
+    second: pepper_10
+  - first:
+      213: 3856699763416155287
+    second: pepper_11
+  - first:
+      213: 6319395710880768860
+    second: pepper_12
+  - first:
+      213: 2651679406996008180
+    second: pepper_13
+  - first:
+      213: 118623882434161182
+    second: pepper_14
+  - first:
+      213: 1535847963132751455
+    second: pepper_15
+  - first:
+      213: 2280278008588940607
+    second: pepper_16
+  - first:
+      213: -5309897899945314192
+    second: pepper_17
+  - first:
+      213: -7570286588162271065
+    second: pepper_18
+  - first:
+      213: 7778679109778839908
+    second: pepper_19
+  - first:
+      213: -4581478468206277875
+    second: pepper_20
+  - first:
+      213: 7996753167514660615
+    second: pepper_21
+  - first:
+      213: 4090305077711890201
+    second: pepper_22
+  - first:
+      213: 5938468293197413542
+    second: pepper_23
+  - first:
+      213: -4644095801602859569
+    second: pepper_24
+  - first:
+      213: 8781086050022348184
+    second: pepper_25
+  - first:
+      213: -2846110627367180443
+    second: pepper_26
+  - first:
+      213: 1418068351147745486
+    second: pepper_27
+  - first:
+      213: -7329514455742845818
+    second: pepper_28
+  - first:
+      213: 3487977446415814893
+    second: pepper_29
+  - first:
+      213: 6729526927837743804
+    second: pepper_30
+  - first:
+      213: -7666610019558695479
+    second: pepper_31
+  - first:
+      213: 6522064555370416443
+    second: pepper_32
+  - first:
+      213: -6817121303834869849
+    second: pepper_33
+  - first:
+      213: -5910118072005838779
+    second: pepper_34
+  - first:
+      213: -6556630939369362300
+    second: pepper_35
+  - first:
+      213: 4415451648556884136
+    second: pepper_36
+  - first:
+      213: 4666352714237281511
+    second: pepper_37
+  - first:
+      213: -3968488371722798289
+    second: pepper_38
+  - first:
+      213: -1600799697362486931
+    second: pepper_39
+  - first:
+      213: -288545893572951606
+    second: pepper_40
+  - first:
+      213: -6334098310315939229
+    second: pepper_41
+  - first:
+      213: -2038994298573701858
+    second: pepper_42
+  - first:
+      213: -351237265524986512
+    second: pepper_43
+  - first:
+      213: -6451603383889969843
+    second: pepper_44
+  - first:
+      213: 3229033801056568687
+    second: pepper_45
+  - first:
+      213: 8203325929132368004
+    second: pepper_46
+  - first:
+      213: 7352819491581076476
+    second: pepper_47
+  - first:
+      213: -4584383418169551120
+    second: pepper_48
+  - first:
+      213: 501873430633388738
+    second: pepper_49
+  - first:
+      213: -3619369978093813845
+    second: pepper_50
+  - first:
+      213: 3159263256546468907
+    second: pepper_51
+  - first:
+      213: -4787467609354214576
+    second: pepper_52
+  - first:
+      213: -225012300467653585
+    second: pepper_53
+  - first:
+      213: 1888379873040250490
+    second: pepper_54
+  - first:
+      213: -3583259158759727256
+    second: pepper_55
+  - first:
+      213: -7491316928763237462
+    second: pepper_56
+  - first:
+      213: -2418940847576019063
+    second: pepper_57
+  - first:
+      213: 5108861531987082
+    second: pepper_58
+  - first:
+      213: 8626924470803171854
+    second: pepper_59
+  - first:
+      213: -4807211280372877124
+    second: pepper_60
+  - first:
+      213: -4812388305129274050
+    second: pepper_61
+  - first:
+      213: 1058078089131709734
+    second: pepper_62
+  - first:
+      213: 1569231585214058183
+    second: pepper_63
+  - first:
+      213: -1420392874574779924
+    second: pepper_64
+  - first:
+      213: 6167202892947995931
+    second: pepper_65
+  - first:
+      213: -1894046298806138480
+    second: pepper_66
+  - first:
+      213: -2077891376588009789
+    second: pepper_67
+  - first:
+      213: -8160373436104760349
+    second: pepper_68
+  - first:
+      213: 1203774856837315081
+    second: pepper_69
+  - first:
+      213: -2194716673157815845
+    second: pepper_70
+  - first:
+      213: -7280087579699687450
+    second: pepper_71
+  - first:
+      213: -4186803225130518081
+    second: pepper_72
+  - first:
+      213: 7163682244642170521
+    second: pepper_73
+  - first:
+      213: -3307561653172590346
+    second: pepper_74
+  - first:
+      213: -290985369215343924
+    second: pepper_75
+  - first:
+      213: 8573556747348484497
+    second: pepper_76
+  - first:
+      213: -6006550284782489279
+    second: pepper_77
+  - first:
+      213: -319902090622684163
+    second: pepper_78
+  - first:
+      213: 6104128360843146351
+    second: pepper_79
+  - first:
+      213: -4993236006319795853
+    second: pepper_80
+  - first:
+      213: -9206137008170674830
+    second: pepper_81
+  - first:
+      213: -5498367400458953576
+    second: pepper_82
+  - first:
+      213: 8767187291274481756
+    second: pepper_83
+  - first:
+      213: 9046822407493996655
+    second: pepper_84
+  - first:
+      213: -7623859320704572432
+    second: pepper_85
+  - first:
+      213: -8800035349226904926
+    second: pepper_86
+  - first:
+      213: -5540341082249397984
+    second: pepper_87
+  - first:
+      213: -7615008614223457956
+    second: pepper_88
+  - first:
+      213: 5243606248510242929
+    second: pepper_89
+  - first:
+      213: 1448861025781756084
+    second: pepper_90
+  - first:
+      213: -295376707663871408
+    second: pepper_91
+  - first:
+      213: -7294479598507074054
+    second: pepper_92
+  - first:
+      213: -8296800243291466148
+    second: pepper_93
+  - first:
+      213: -8090463355461440114
+    second: pepper_94
+  - first:
+      213: 5585048408446051736
+    second: pepper_95
+  - first:
+      213: -9034169257798375789
+    second: pepper_96
+  - first:
+      213: -4516043588741537970
+    second: pepper_97
+  - first:
+      213: 4203354805394499555
+    second: pepper_98
+  - first:
+      213: -5068179686005442120
+    second: pepper_99
+  - first:
+      213: 331368340097329594
+    second: pepper_100
+  - first:
+      213: 1983287819967125097
+    second: pepper_101
+  - first:
+      213: 7430755186595920881
+    second: pepper_102
+  - first:
+      213: 2788372553694183088
+    second: pepper_103
+  - first:
+      213: 4844532275361874011
+    second: pepper_104
+  - first:
+      213: 4433041574185758401
+    second: pepper_105
+  - first:
+      213: -2836692768289098531
+    second: pepper_106
+  - first:
+      213: -3241485048077267665
+    second: pepper_107
+  - first:
+      213: 6432866848816648369
+    second: pepper_108
+  - first:
+      213: -1278464018236035119
+    second: pepper_109
+  - first:
+      213: -7121165258843844445
+    second: pepper_110
+  - first:
+      213: 5284750179120381664
+    second: pepper_111
+  - first:
+      213: 4739741788965906695
+    second: pepper_112
+  - first:
+      213: 6989580492046548887
+    second: pepper_113
+  - first:
+      213: 6915167355669738607
+    second: pepper_114
+  - first:
+      213: -6400434768746168390
+    second: pepper_115
+  - first:
+      213: 5680307317904603234
+    second: pepper_116
+  - first:
+      213: 3765341664584884945
+    second: pepper_117
+  - first:
+      213: -3786979593287122877
+    second: pepper_118
+  - first:
+      213: -61780830148452062
+    second: pepper_119
+  - first:
+      213: -352937745500068836
+    second: pepper_120
+  - first:
+      213: -304979574712069281
+    second: pepper_121
+  - first:
+      213: -8555629796705632387
+    second: pepper_122
+  - first:
+      213: -4889368464476284894
+    second: pepper_123
+  - first:
+      213: -2774199038013000062
+    second: pepper_124
+  - first:
+      213: -9116040577164048432
+    second: pepper_125
+  - first:
+      213: -4993420323276562485
+    second: pepper_126
+  - first:
+      213: -29632379283586274
+    second: pepper_127
+  - first:
+      213: -2763825521482107124
+    second: pepper_128
+  - first:
+      213: 7756441181282029653
+    second: pepper_129
+  - first:
+      213: 1504661120091347912
+    second: pepper_130
+  - first:
+      213: 3759048116064476888
+    second: pepper_131
+  - first:
+      213: -628283344285152665
+    second: pepper_132
+  - first:
+      213: -1953993940143089874
+    second: pepper_133
+  - first:
+      213: -6308635233358784580
+    second: pepper_134
+  - first:
+      213: -8352019002663672628
+    second: pepper_135
+  - first:
+      213: 5143568607718826900
+    second: pepper_136
+  - first:
+      213: -1873160929292893018
+    second: pepper_137
+  - first:
+      213: -5481413836749899988
+    second: pepper_138
+  - first:
+      213: -6537156622596298809
+    second: pepper_139
+  - first:
+      213: -3888905393810819101
+    second: pepper_140
+  - first:
+      213: -7160180311767007456
+    second: pepper_141
+  - first:
+      213: -5937406547731536856
+    second: pepper_142
+  - first:
+      213: 8730887661225383057
+    second: pepper_143
+  - first:
+      213: 5221014970808806403
+    second: pepper_144
+  - first:
+      213: -7211529930793110422
+    second: pepper_145
+  - first:
+      213: 6689104294945022654
+    second: pepper_146
+  - first:
+      213: -5173065032575549445
+    second: pepper_147
+  - first:
+      213: 5060815646794691588
+    second: pepper_148
+  - first:
+      213: 6099671984466107966
+    second: pepper_149
+  - first:
+      213: 165519835354199179
+    second: pepper_150
+  - first:
+      213: 5198447364778085094
+    second: pepper_151
+  - first:
+      213: -8551593243354370266
+    second: pepper_152
+  - first:
+      213: 3088746654702575948
+    second: pepper_153
+  - first:
+      213: 5899398595956090887
+    second: pepper_154
+  - first:
+      213: -5452908456415573319
+    second: pepper_155
+  - first:
+      213: 1833368001128241781
+    second: pepper_156
+  - first:
+      213: 3098314156097842781
+    second: pepper_157
+  - first:
+      213: -8032555112208756365
+    second: pepper_158
+  - first:
+      213: -7929739949715767836
+    second: pepper_159
+  - first:
+      213: -9138746830641275913
+    second: pepper_160
+  - first:
+      213: -4132342004729622865
+    second: pepper_161
+  - first:
+      213: 4311309205665207349
+    second: pepper_162
+  - first:
+      213: 8338282404489564004
+    second: pepper_163
+  - first:
+      213: -607755592234135972
+    second: pepper_164
+  - first:
+      213: -950061675680868084
+    second: pepper_165
+  - first:
+      213: 6787353028199657062
+    second: pepper_166
+  - first:
+      213: -5658209464802879368
+    second: pepper_167
+  - first:
+      213: 2091539406854149360
+    second: pepper_168
+  - first:
+      213: 1820480324683958667
+    second: pepper_169
+  - first:
+      213: -6573501514667885853
+    second: pepper_170
+  - first:
+      213: 3986818342064824316
+    second: pepper_171
+  - first:
+      213: 4874301200958044516
+    second: pepper_172
+  - first:
+      213: -5014855953121993596
+    second: pepper_173
+  - first:
+      213: -5937725420599874205
+    second: pepper_174
+  - first:
+      213: -1645161329767093680
+    second: pepper_175
+  - first:
+      213: -5027978292104123320
+    second: pepper_176
+  - first:
+      213: 5015914703526021087
+    second: pepper_177
+  - first:
+      213: 4345708076215250365
+    second: pepper_178
+  - first:
+      213: -2949148264052404200
+    second: pepper_179
+  - first:
+      213: 4571714910174034167
+    second: pepper_180
+  - first:
+      213: -3049736642389442543
+    second: pepper_181
+  - first:
+      213: 4849794360340974077
+    second: pepper_182
+  - first:
+      213: 4812610148079079429
+    second: pepper_183
+  - first:
+      213: -1903547131914928169
+    second: pepper_184
+  - first:
+      213: -3960585352536970434
+    second: pepper_185
+  - first:
+      213: -1572989554371028307
+    second: pepper_186
+  - first:
+      213: -6854850029389919886
+    second: pepper_187
+  - first:
+      213: -5287156150611296859
+    second: pepper_188
+  - first:
+      213: 4249574171858078411
+    second: pepper_189
+  - first:
+      213: -5331310431720089598
+    second: pepper_190
+  - first:
+      213: 2751199112962431693
+    second: pepper_191
+  - first:
+      213: -2315685051608059789
+    second: pepper_192
+  - first:
+      213: 4021847530247897450
+    second: pepper_193
+  - first:
+      213: 6996901683626461274
+    second: pepper_194
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pepper_0
+      rect:
+        serializedVersion: 2
+        x: 2274
+        y: 2377
+        width: 52
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b87ad5df6b73470800000000000000
+      internalID: 8374363231432968964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_1
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 2330
+        width: 57
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6a9014bca0f4550800000000000000
+      internalID: 6147143884469806800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_2
+      rect:
+        serializedVersion: 2
+        x: 2334
+        y: 2346
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407d7e64dc9ed06a0800000000000000
+      internalID: -6481267220849109244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_3
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 2290
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78895901dfc14ed40800000000000000
+      internalID: 5612642908841023623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_4
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 2278
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25dbd4db030063370800000000000000
+      internalID: 8301823172438506834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_5
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 2273
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93bd0f37ea43c1ff0800000000000000
+      internalID: -64118370815911111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_6
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 2254
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda5cdeb6b94379a0800000000000000
+      internalID: -6236560009743017251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_7
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 2252
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c2d175f217c38f0800000000000000
+      internalID: -559447805561852844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_8
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 2252
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fec25b5db4931600800000000000000
+      internalID: 437857129786953456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_9
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 2244
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d00a685c9e1dbb0800000000000000
+      internalID: -4912888683908035195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_10
+      rect:
+        serializedVersion: 2
+        x: 2067
+        y: 2252
+        width: 45
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e223f202b32f340800000000000000
+      internalID: 4896040754321960488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_11
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 2258
+        width: 38
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794c0cb4000c58530800000000000000
+      internalID: 3856699763416155287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_12
+      rect:
+        serializedVersion: 2
+        x: 2371
+        y: 2238
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c53ec2edae003b750800000000000000
+      internalID: 6319395710880768860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_13
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 2249
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc27381f58acc420800000000000000
+      internalID: 2651679406996008180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_14
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2251
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1aad56eacf65a100800000000000000
+      internalID: 118623882434161182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_15
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2243
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ee88fc59d605510800000000000000
+      internalID: 1535847963132751455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_16
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 2224
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f35341374cc25af10800000000000000
+      internalID: 2280278008588940607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_17
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 2152
+        width: 90
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078ba283ef37f46b0800000000000000
+      internalID: -5309897899945314192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_18
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 2241
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a81fa80570f0f690800000000000000
+      internalID: -7570286588162271065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_19
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 2243
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4699e18ef6b63fb60800000000000000
+      internalID: 7778679109778839908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_20
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 2232
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0bc67c5b915b60c0800000000000000
+      internalID: -4581478468206277875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_21
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 2209
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70fe03223ac2afe60800000000000000
+      internalID: 7996753167514660615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_22
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 2226
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9176efbfbcea3c830800000000000000
+      internalID: 4090305077711890201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_23
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 2212
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6acb3f5037da96250800000000000000
+      internalID: 5938468293197413542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_24
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 2187
+        width: 18
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd1492597bdc8fb0800000000000000
+      internalID: -4644095801602859569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_25
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 2214
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89558b10d3facd970800000000000000
+      internalID: 8781086050022348184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_26
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 2206
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 567a058b6759088d0800000000000000
+      internalID: -2846110627367180443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_27
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 2217
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0a261f6adfda310800000000000000
+      internalID: 1418068351147745486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_28
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 2209
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c6b599f65584a90800000000000000
+      internalID: -7329514455742845818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_29
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 2155
+        width: 63
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de05036e109c76030800000000000000
+      internalID: 3487977446415814893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_30
+      rect:
+        serializedVersion: 2
+        x: 2033
+        y: 2221
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbac1381615146d50800000000000000
+      internalID: 6729526927837743804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_31
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 2207
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cdd0c08ecaba9590800000000000000
+      internalID: -7666610019558695479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_32
+      rect:
+        serializedVersion: 2
+        x: 2098
+        y: 2222
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3905016827038a50800000000000000
+      internalID: 6522064555370416443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_33
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 2215
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7afbc26fa48b461a0800000000000000
+      internalID: -6817121303834869849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_34
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 2222
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548b9793dea0bfda0800000000000000
+      internalID: -5910118072005838779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_35
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 2207
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48cad8f26ea2205a0800000000000000
+      internalID: -6556630939369362300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_36
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 2191
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a0652b51e5d64d30800000000000000
+      internalID: 4415451648556884136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_37
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 2212
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e40bc8f11732c040800000000000000
+      internalID: 4666352714237281511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_38
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 2210
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2bb1341ad81de8c0800000000000000
+      internalID: -3968488371722798289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_39
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 2205
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69f72a1821d8c9e0800000000000000
+      internalID: -1600799697362486931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_40
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 2206
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac1cf20e901eefbf0800000000000000
+      internalID: -288545893572951606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_41
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 2202
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a67317523c818a0800000000000000
+      internalID: -6334098310315939229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_42
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 2192
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1db77e0d7904b3e0800000000000000
+      internalID: -2038994298573701858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_43
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 2187
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07de0846197202bf0800000000000000
+      internalID: -351237265524986512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_44
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 2186
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4db78787ec4776a0800000000000000
+      internalID: -6451603383889969843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_45
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 2199
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f65c4b74225dfcc20800000000000000
+      internalID: 3229033801056568687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_46
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 2189
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 480afae287118d170800000000000000
+      internalID: 8203325929132368004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_47
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 2197
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf32245ee567a0660800000000000000
+      internalID: 7352819491581076476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_48
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 2185
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f610ddf19ff060c0800000000000000
+      internalID: -4584383418169551120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_49
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 2195
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca1c13e93307f600800000000000000
+      internalID: 501873430633388738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_50
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 2180
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf31016e2a65cdc0800000000000000
+      internalID: -3619369978093813845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_51
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 2201
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24656e7135f7db20800000000000000
+      internalID: 3159263256546468907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_52
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 2177
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053e0ca039f7f8db0800000000000000
+      internalID: -4787467609354214576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_53
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 2194
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f243880418890ecf0800000000000000
+      internalID: -225012300467653585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_54
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 2175
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76bf8d4d7fd43a10800000000000000
+      internalID: 1888379873040250490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_55
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 2187
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f16ffa7c4b54ec0800000000000000
+      internalID: -3583259158759727256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_56
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 2188
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aab6239a1fe790890800000000000000
+      internalID: -7491316928763237462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_57
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 2164
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f8c8f7d123e6ed0800000000000000
+      internalID: -2418940847576019063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_58
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 2188
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c12d48b76221000800000000000000
+      internalID: 5108861531987082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_59
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 2190
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a095a491ef8b770800000000000000
+      internalID: 8626924470803171854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_60
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 2185
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8bf196fca594db0800000000000000
+      internalID: -4807211280372877124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_61
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 2181
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3586876556f63db0800000000000000
+      internalID: -4812388305129274050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_62
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 2178
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625d1578a6c0fae00800000000000000
+      internalID: 1058078089131709734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_63
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 2177
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cec10700d707c510800000000000000
+      internalID: 1569231585214058183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_64
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 2097
+        width: 95
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce96975c430c94ce0800000000000000
+      internalID: -1420392874574779924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_65
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 2006
+        width: 158
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d3deb1b5e469550800000000000000
+      internalID: 6167202892947995931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_66
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 2186
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09944832deef6b5e0800000000000000
+      internalID: -1894046298806138480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_67
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 1955
+        width: 203
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cecf985dc8d923e0800000000000000
+      internalID: -2077891376588009789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_68
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 2148
+        width: 13
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e3217a689780ce80800000000000000
+      internalID: -8160373436104760349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_69
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 2176
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ab55bbadaa4b010800000000000000
+      internalID: 1203774856837315081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_70
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 2164
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd12dc950dcca81e0800000000000000
+      internalID: -2194716673157815845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_71
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 2166
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef4446faeee7fa90800000000000000
+      internalID: -7280087579699687450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_72
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 2169
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb9b2ad36ac75e5c0800000000000000
+      internalID: -4186803225130518081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_73
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 2154
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9966ba3fb038a6360800000000000000
+      internalID: 7163682244642170521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_74
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 2155
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8a1fd533e2912d0800000000000000
+      internalID: -3307561653172590346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_75
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 2164
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc26511395636fbf0800000000000000
+      internalID: -290985369215343924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_76
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 2154
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1912c53ef646bf670800000000000000
+      internalID: 8573556747348484497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_77
+      rect:
+        serializedVersion: 2
+        x: 2013
+        y: 2130
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141b40e075274aca0800000000000000
+      internalID: -6006550284782489279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_78
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 2151
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3b7855eba7f8bf0800000000000000
+      internalID: -319902090622684163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_79
+      rect:
+        serializedVersion: 2
+        x: 2322
+        y: 2102
+        width: 49
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f647173376836b450800000000000000
+      internalID: 6104128360843146351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_80
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 2154
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3715e9bbe4674bab0800000000000000
+      internalID: -4993236006319795853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_81
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 2143
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 275d862da2b3d3080800000000000000
+      internalID: -9206137008170674830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_82
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 2133
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c5e0b1bffd1b3b0800000000000000
+      internalID: -5498367400458953576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_83
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 2128
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c501cbf046e4ba970800000000000000
+      internalID: 8767187291274481756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_84
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2138
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6059b82c05cc8d70800000000000000
+      internalID: 9046822407493996655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_85
+      rect:
+        serializedVersion: 2
+        x: 2228
+        y: 2137
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f36adb375c923690800000000000000
+      internalID: -7623859320704572432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_86
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 2125
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a22376797effd580800000000000000
+      internalID: -8800035349226904926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_87
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 2127
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0297502c321cc13b0800000000000000
+      internalID: -5540341082249397984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_88
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 2111
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51dbabe20e025690800000000000000
+      internalID: -7615008614223457956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_89
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 2133
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170c878e91805c840800000000000000
+      internalID: 5243606248510242929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_90
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 2126
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b031a23d636b1410800000000000000
+      internalID: 1448861025781756084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_91
+      rect:
+        serializedVersion: 2
+        x: 2234
+        y: 2126
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05245c8037c96ebf0800000000000000
+      internalID: -295376707663871408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_92
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 2121
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afdd6a5f37dc4ca90800000000000000
+      internalID: -7294479598507074054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_93
+      rect:
+        serializedVersion: 2
+        x: 2231
+        y: 2120
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56dc361328dbdc80800000000000000
+      internalID: -8296800243291466148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_94
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 2116
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8de76d7176e8bf80800000000000000
+      internalID: -8090463355461440114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_95
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 2114
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 895a9c6cfe3128d40800000000000000
+      internalID: 5585048408446051736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_96
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 2115
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3966c24dcee20a280800000000000000
+      internalID: -9034169257798375789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_97
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 2094
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f51e6784ac351c0800000000000000
+      internalID: -4516043588741537970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_98
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 2107
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e76878dce0555a30800000000000000
+      internalID: 4203354805394499555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_99
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 2107
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b97bcd8d653aa9b0800000000000000
+      internalID: -5068179686005442120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_100
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 2097
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9ef49efb1499400800000000000000
+      internalID: 331368340097329594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_101
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 2084
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966df7ca3cd068b10800000000000000
+      internalID: 1983287819967125097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_102
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 2076
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fbf0fde8785f1760800000000000000
+      internalID: 7430755186595920881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_103
+      rect:
+        serializedVersion: 2
+        x: 1877
+        y: 2094
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bef36c601a42b620800000000000000
+      internalID: 2788372553694183088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_104
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 2092
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b500cdfdf6c3b3340800000000000000
+      internalID: 4844532275361874011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_105
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 2089
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce61ef03d3558d30800000000000000
+      internalID: 4433041574185758401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_106
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 2090
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd47539e4fa02a8d0800000000000000
+      internalID: -2836692768289098531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_107
+      rect:
+        serializedVersion: 2
+        x: 2266
+        y: 2090
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d4d9cd58ee303d0800000000000000
+      internalID: -3241485048077267665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_108
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 2063
+        width: 56
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b05a13f052264950800000000000000
+      internalID: 6432866848816648369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_109
+      rect:
+        serializedVersion: 2
+        x: 2209
+        y: 2057
+        width: 59
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df2ceebfbbf14ee0800000000000000
+      internalID: -1278464018236035119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_110
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 2085
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a092c73de98c2d90800000000000000
+      internalID: -7121165258843844445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_111
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 2082
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eef621c944375940800000000000000
+      internalID: 5284750179120381664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_112
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 2057
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709236a7b02f6c140800000000000000
+      internalID: 4739741788965906695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_113
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 2072
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79f3f65dc6afff060800000000000000
+      internalID: 6989580492046548887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_114
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 2071
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f647215621c97ff50800000000000000
+      internalID: 6915167355669738607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_115
+      rect:
+        serializedVersion: 2
+        x: 2276
+        y: 2072
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf33d02d761d27a0800000000000000
+      internalID: -6400434768746168390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_116
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 2053
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26871caf86184de40800000000000000
+      internalID: 5680307317904603234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_117
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 2062
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d26f875b4e214430800000000000000
+      internalID: 3765341664584884945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_118
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 2057
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340c77acf12f17bc0800000000000000
+      internalID: -3786979593287122877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_119
+      rect:
+        serializedVersion: 2
+        x: 2262
+        y: 2056
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 221a21d89a2842ff0800000000000000
+      internalID: -61780830148452062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_120
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 2049
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1424ab8dfc1a1bf0800000000000000
+      internalID: -352937745500068836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_121
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 2041
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53998151be74cbf0800000000000000
+      internalID: -304979574712069281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_122
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 2040
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ffc91970c444980800000000000000
+      internalID: -8555629796705632387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_123
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 2043
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228d4ea5949752cb0800000000000000
+      internalID: -4889368464476284894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_124
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 2048
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 286310b5ca01089d0800000000000000
+      internalID: -2774199038013000062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_125
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 2039
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d70718d4615d7180800000000000000
+      internalID: -9116040577164048432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_126
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 2050
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf52e81caec3bab0800000000000000
+      internalID: -4993420323276562485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_127
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 2043
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e13c3fe0289b69ff0800000000000000
+      internalID: -29632379283586274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_128
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 2047
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0776e2e45be4a9d0800000000000000
+      internalID: -2763825521482107124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_129
+      rect:
+        serializedVersion: 2
+        x: 2247
+        y: 2039
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550d683b82a64ab60800000000000000
+      internalID: 7756441181282029653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_130
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 2051
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cbd2621151a1e410800000000000000
+      internalID: 1504661120091347912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_131
+      rect:
+        serializedVersion: 2
+        x: 2261
+        y: 2037
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dedf936852da2430800000000000000
+      internalID: 3759048116064476888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_132
+      rect:
+        serializedVersion: 2
+        x: 2283
+        y: 2040
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ac69d80a3e747f0800000000000000
+      internalID: -628283344285152665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_133
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 2039
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2751883dd402e4e0800000000000000
+      internalID: -1953993940143089874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_134
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 2027
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7d22a0ea93378a0800000000000000
+      internalID: -6308635233358784580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_135
+      rect:
+        serializedVersion: 2
+        x: 1877
+        y: 2036
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc46becc7faa71c80800000000000000
+      internalID: -8352019002663672628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_136
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 2031
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4936eec9560a16740800000000000000
+      internalID: 5143568607718826900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_137
+      rect:
+        serializedVersion: 2
+        x: 2281
+        y: 2032
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a44b5a2f023106e0800000000000000
+      internalID: -1873160929292893018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_138
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 2009
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c277c91482b1ee3b0800000000000000
+      internalID: -5481413836749899988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_139
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 2000
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c72e05efaa5745a0800000000000000
+      internalID: -6537156622596298809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_140
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 2030
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e73ecc0625d70ac0800000000000000
+      internalID: -3888905393810819101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_141
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 2027
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02fb16551fde1ac90800000000000000
+      internalID: -7160180311767007456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_142
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 2012
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824226bd3381a9da0800000000000000
+      internalID: -5937406547731536856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_143
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2004
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1941e25d1185a2970800000000000000
+      internalID: 8730887661225383057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_144
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 2006
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c2e0e2475c47840800000000000000
+      internalID: 5221014970808806403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_145
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 2005
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64bafb7cbf7beb90800000000000000
+      internalID: -7211529930793110422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_146
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 2008
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2ecb57ae874dc50800000000000000
+      internalID: 6689104294945022654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_147
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 1996
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfff65dc2c49538b0800000000000000
+      internalID: -5173065032575549445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_148
+      rect:
+        serializedVersion: 2
+        x: 2025
+        y: 2001
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 404bfe47401ab3640800000000000000
+      internalID: 5060815646794691588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_149
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 2007
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e11883a5366a450800000000000000
+      internalID: 6099671984466107966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_150
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 1999
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84719dc96b0c4200800000000000000
+      internalID: 165519835354199179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_151
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 1983
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eac921f558942840800000000000000
+      internalID: 5198447364778085094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_152
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 1995
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f6b32e043a25980800000000000000
+      internalID: -8551593243354370266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_153
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 1993
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4129b2b7be6dda20800000000000000
+      internalID: 3088746654702575948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_154
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 1998
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708a66444cfded150800000000000000
+      internalID: 5899398595956090887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_155
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 1989
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba40ae46a06354b0800000000000000
+      internalID: -5452908456415573319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_156
+      rect:
+        serializedVersion: 2
+        x: 2231
+        y: 1996
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a11d1cb7e617910800000000000000
+      internalID: 1833368001128241781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_157
+      rect:
+        serializedVersion: 2
+        x: 1894
+        y: 1983
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5ea6c43f4c6ffa20800000000000000
+      internalID: 3098314156097842781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_158
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 1990
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3719c0a0fa1a68090800000000000000
+      internalID: -8032555112208756365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_159
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 1986
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4edb7ff7787e3f190800000000000000
+      internalID: -7929739949715767836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_160
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 1984
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb566b3d26ac2180800000000000000
+      internalID: -9138746830641275913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_161
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 1962
+        width: 67
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae4aad37d8f6a6c0800000000000000
+      internalID: -4132342004729622865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_162
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 1971
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534db8851e8d4db30800000000000000
+      internalID: 4311309205665207349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_163
+      rect:
+        serializedVersion: 2
+        x: 2235
+        y: 1986
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f8d743ba787b370800000000000000
+      internalID: 8338282404489564004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_164
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 1951
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e80a64281d097f0800000000000000
+      internalID: -607755592234135972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_165
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 1982
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09545a80f3b0d2f0800000000000000
+      internalID: -950061675680868084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_166
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 1972
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e23034e95813e50800000000000000
+      internalID: 6787353028199657062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_167
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 1966
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878dba168700a71b0800000000000000
+      internalID: -5658209464802879368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_168
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 1954
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4d5435204a60d10800000000000000
+      internalID: 2091539406854149360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_169
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 1948
+        width: 69
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b890061c535a34910800000000000000
+      internalID: 1820480324683958667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_170
+      rect:
+        serializedVersion: 2
+        x: 2162
+        y: 1954
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea7ab7433b36c4a0800000000000000
+      internalID: -6573501514667885853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_171
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 1965
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff19c6b826045730800000000000000
+      internalID: 3986818342064824316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_172
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 1940
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4693d5bfd1ff4a340800000000000000
+      internalID: 4874301200958044516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_173
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 1943
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c196a9417a76ab0800000000000000
+      internalID: -5014855953121993596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_174
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 1947
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d665b7036f89da0800000000000000
+      internalID: -5937725420599874205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_175
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 1947
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ae50dac763b29e0800000000000000
+      internalID: -1645161329767093680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_176
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 1937
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c22c8f168093ab0800000000000000
+      internalID: -5027978292104123320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_177
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 1949
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7c35fe8db1c9540800000000000000
+      internalID: 5015914703526021087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_178
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 1950
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd2b54887e0f4c30800000000000000
+      internalID: 4345708076215250365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_179
+      rect:
+        serializedVersion: 2
+        x: 2054
+        y: 1927
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810523377458217d0800000000000000
+      internalID: -2949148264052404200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_180
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 1937
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8b7432d7ef17f30800000000000000
+      internalID: 4571714910174034167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_181
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 1932
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11082e39ea82da5d0800000000000000
+      internalID: -3049736642389442543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_182
+      rect:
+        serializedVersion: 2
+        x: 2146
+        y: 1938
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df901d1864eed4340800000000000000
+      internalID: 4849794360340974077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_183
+      rect:
+        serializedVersion: 2
+        x: 2154
+        y: 1933
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50091be6e63d9c240800000000000000
+      internalID: 4812610148079079429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_184
+      rect:
+        serializedVersion: 2
+        x: 2198
+        y: 1941
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df3ffc08fd3595e0800000000000000
+      internalID: -1903547131914928169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_185
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 1931
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b2b6f1b9c2909c0800000000000000
+      internalID: -3960585352536970434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_186
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 1919
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa9058955e9b2ae0800000000000000
+      internalID: -1572989554371028307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_187
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 1928
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27943a1873eaed0a0800000000000000
+      internalID: -6854850029389919886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_188
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 1911
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5adbaca5e7f30a6b0800000000000000
+      internalID: -5287156150611296859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_189
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 1922
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca8640b13589fa30800000000000000
+      internalID: 4249574171858078411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_190
+      rect:
+        serializedVersion: 2
+        x: 2142
+        y: 1914
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2085df9a8616306b0800000000000000
+      internalID: -5331310431720089598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_191
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 1919
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcade7a44093e2620800000000000000
+      internalID: 2751199112962431693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_192
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 1915
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370383fe6b80ddfd0800000000000000
+      internalID: -2315685051608059789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_193
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 1902
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a614535250970d730800000000000000
+      internalID: 4021847530247897450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper_194
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 1900
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5843e4920df91160800000000000000
+      internalID: 6996901683626461274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pepper_0: 8374363231432968964
+      pepper_1: 6147143884469806800
+      pepper_10: 4896040754321960488
+      pepper_100: 331368340097329594
+      pepper_101: 1983287819967125097
+      pepper_102: 7430755186595920881
+      pepper_103: 2788372553694183088
+      pepper_104: 4844532275361874011
+      pepper_105: 4433041574185758401
+      pepper_106: -2836692768289098531
+      pepper_107: -3241485048077267665
+      pepper_108: 6432866848816648369
+      pepper_109: -1278464018236035119
+      pepper_11: 3856699763416155287
+      pepper_110: -7121165258843844445
+      pepper_111: 5284750179120381664
+      pepper_112: 4739741788965906695
+      pepper_113: 6989580492046548887
+      pepper_114: 6915167355669738607
+      pepper_115: -6400434768746168390
+      pepper_116: 5680307317904603234
+      pepper_117: 3765341664584884945
+      pepper_118: -3786979593287122877
+      pepper_119: -61780830148452062
+      pepper_12: 6319395710880768860
+      pepper_120: -352937745500068836
+      pepper_121: -304979574712069281
+      pepper_122: -8555629796705632387
+      pepper_123: -4889368464476284894
+      pepper_124: -2774199038013000062
+      pepper_125: -9116040577164048432
+      pepper_126: -4993420323276562485
+      pepper_127: -29632379283586274
+      pepper_128: -2763825521482107124
+      pepper_129: 7756441181282029653
+      pepper_13: 2651679406996008180
+      pepper_130: 1504661120091347912
+      pepper_131: 3759048116064476888
+      pepper_132: -628283344285152665
+      pepper_133: -1953993940143089874
+      pepper_134: -6308635233358784580
+      pepper_135: -8352019002663672628
+      pepper_136: 5143568607718826900
+      pepper_137: -1873160929292893018
+      pepper_138: -5481413836749899988
+      pepper_139: -6537156622596298809
+      pepper_14: 118623882434161182
+      pepper_140: -3888905393810819101
+      pepper_141: -7160180311767007456
+      pepper_142: -5937406547731536856
+      pepper_143: 8730887661225383057
+      pepper_144: 5221014970808806403
+      pepper_145: -7211529930793110422
+      pepper_146: 6689104294945022654
+      pepper_147: -5173065032575549445
+      pepper_148: 5060815646794691588
+      pepper_149: 6099671984466107966
+      pepper_15: 1535847963132751455
+      pepper_150: 165519835354199179
+      pepper_151: 5198447364778085094
+      pepper_152: -8551593243354370266
+      pepper_153: 3088746654702575948
+      pepper_154: 5899398595956090887
+      pepper_155: -5452908456415573319
+      pepper_156: 1833368001128241781
+      pepper_157: 3098314156097842781
+      pepper_158: -8032555112208756365
+      pepper_159: -7929739949715767836
+      pepper_16: 2280278008588940607
+      pepper_160: -9138746830641275913
+      pepper_161: -4132342004729622865
+      pepper_162: 4311309205665207349
+      pepper_163: 8338282404489564004
+      pepper_164: -607755592234135972
+      pepper_165: -950061675680868084
+      pepper_166: 6787353028199657062
+      pepper_167: -5658209464802879368
+      pepper_168: 2091539406854149360
+      pepper_169: 1820480324683958667
+      pepper_17: -5309897899945314192
+      pepper_170: -6573501514667885853
+      pepper_171: 3986818342064824316
+      pepper_172: 4874301200958044516
+      pepper_173: -5014855953121993596
+      pepper_174: -5937725420599874205
+      pepper_175: -1645161329767093680
+      pepper_176: -5027978292104123320
+      pepper_177: 5015914703526021087
+      pepper_178: 4345708076215250365
+      pepper_179: -2949148264052404200
+      pepper_18: -7570286588162271065
+      pepper_180: 4571714910174034167
+      pepper_181: -3049736642389442543
+      pepper_182: 4849794360340974077
+      pepper_183: 4812610148079079429
+      pepper_184: -1903547131914928169
+      pepper_185: -3960585352536970434
+      pepper_186: -1572989554371028307
+      pepper_187: -6854850029389919886
+      pepper_188: -5287156150611296859
+      pepper_189: 4249574171858078411
+      pepper_19: 7778679109778839908
+      pepper_190: -5331310431720089598
+      pepper_191: 2751199112962431693
+      pepper_192: -2315685051608059789
+      pepper_193: 4021847530247897450
+      pepper_194: 6996901683626461274
+      pepper_2: -6481267220849109244
+      pepper_20: -4581478468206277875
+      pepper_21: 7996753167514660615
+      pepper_22: 4090305077711890201
+      pepper_23: 5938468293197413542
+      pepper_24: -4644095801602859569
+      pepper_25: 8781086050022348184
+      pepper_26: -2846110627367180443
+      pepper_27: 1418068351147745486
+      pepper_28: -7329514455742845818
+      pepper_29: 3487977446415814893
+      pepper_3: 5612642908841023623
+      pepper_30: 6729526927837743804
+      pepper_31: -7666610019558695479
+      pepper_32: 6522064555370416443
+      pepper_33: -6817121303834869849
+      pepper_34: -5910118072005838779
+      pepper_35: -6556630939369362300
+      pepper_36: 4415451648556884136
+      pepper_37: 4666352714237281511
+      pepper_38: -3968488371722798289
+      pepper_39: -1600799697362486931
+      pepper_4: 8301823172438506834
+      pepper_40: -288545893572951606
+      pepper_41: -6334098310315939229
+      pepper_42: -2038994298573701858
+      pepper_43: -351237265524986512
+      pepper_44: -6451603383889969843
+      pepper_45: 3229033801056568687
+      pepper_46: 8203325929132368004
+      pepper_47: 7352819491581076476
+      pepper_48: -4584383418169551120
+      pepper_49: 501873430633388738
+      pepper_5: -64118370815911111
+      pepper_50: -3619369978093813845
+      pepper_51: 3159263256546468907
+      pepper_52: -4787467609354214576
+      pepper_53: -225012300467653585
+      pepper_54: 1888379873040250490
+      pepper_55: -3583259158759727256
+      pepper_56: -7491316928763237462
+      pepper_57: -2418940847576019063
+      pepper_58: 5108861531987082
+      pepper_59: 8626924470803171854
+      pepper_6: -6236560009743017251
+      pepper_60: -4807211280372877124
+      pepper_61: -4812388305129274050
+      pepper_62: 1058078089131709734
+      pepper_63: 1569231585214058183
+      pepper_64: -1420392874574779924
+      pepper_65: 6167202892947995931
+      pepper_66: -1894046298806138480
+      pepper_67: -2077891376588009789
+      pepper_68: -8160373436104760349
+      pepper_69: 1203774856837315081
+      pepper_7: -559447805561852844
+      pepper_70: -2194716673157815845
+      pepper_71: -7280087579699687450
+      pepper_72: -4186803225130518081
+      pepper_73: 7163682244642170521
+      pepper_74: -3307561653172590346
+      pepper_75: -290985369215343924
+      pepper_76: 8573556747348484497
+      pepper_77: -6006550284782489279
+      pepper_78: -319902090622684163
+      pepper_79: 6104128360843146351
+      pepper_8: 437857129786953456
+      pepper_80: -4993236006319795853
+      pepper_81: -9206137008170674830
+      pepper_82: -5498367400458953576
+      pepper_83: 8767187291274481756
+      pepper_84: 9046822407493996655
+      pepper_85: -7623859320704572432
+      pepper_86: -8800035349226904926
+      pepper_87: -5540341082249397984
+      pepper_88: -7615008614223457956
+      pepper_89: 5243606248510242929
+      pepper_9: -4912888683908035195
+      pepper_90: 1448861025781756084
+      pepper_91: -295376707663871408
+      pepper_92: -7294479598507074054
+      pepper_93: -8296800243291466148
+      pepper_94: -8090463355461440114
+      pepper_95: 5585048408446051736
+      pepper_96: -9034169257798375789
+      pepper_97: -4516043588741537970
+      pepper_98: 4203354805394499555
+      pepper_99: -5068179686005442120
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

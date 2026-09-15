@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1999f921b99b04eb2bb09886627dca2e
+guid: 013bfa4b47e2b4e75ba77c362a830479
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4912951543653803745
-    second: frypan_0
+      213: -67861805864525146
+    second: mayonaise_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frypan_0
+      name: mayonaise_0
       rect:
         serializedVersion: 2
-        x: 675
-        y: 1520
-        width: 3196
-        height: 1351
+        x: 1050
+        y: 2108
+        width: 375
+        height: 345
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f19dec9d990b1dbb0800000000000000
-      internalID: -4912951543653803745
+      spriteID: 6a2e0af0c08ee0ff0800000000000000
+      internalID: -67861805864525146
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      frypan_0: -4912951543653803745
+      mayonaise_0: -67861805864525146
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

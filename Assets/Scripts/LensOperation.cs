@@ -26,13 +26,10 @@ public class LensOperation : EggStatusSlider
     {
         base.Update();
 
-        print(is_focused[GetMyIdx()]);
         if (!is_focused[GetMyIdx()])
         {
-            print("Unfocused");
             return;
         }
-        print("Focused");
 
         if (!(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow)))
         {
