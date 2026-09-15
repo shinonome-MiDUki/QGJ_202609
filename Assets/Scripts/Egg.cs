@@ -95,7 +95,7 @@ public class Egg : MonoBehaviour
             print("Reached ln91");
             if (egg_rt != null)
             {
-                egg_rt.localScale = new Vector3(0.4f, 0.4f, 0.4f);
+                egg_rt.localScale = new Vector3(0.2f, 0.2f, 0.2f);
             }
         }
     }

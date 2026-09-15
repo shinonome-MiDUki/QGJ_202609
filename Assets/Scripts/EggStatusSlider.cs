@@ -4,9 +4,9 @@ using UnityEngine.UI;
 
 public class EggStatusSlider : Egg
 {
-    [SerializeField] private float play_time = 180.0f;
+    [SerializeField] private float play_time = 60.0f;
     private Slider status_slider;
-    private float speed_factor;
+    private static float speed_factor;
     
 
     void Start()
