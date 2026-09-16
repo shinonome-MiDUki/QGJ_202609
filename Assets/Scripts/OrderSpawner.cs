@@ -1,13 +1,19 @@
 using System;
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
+using NUnit.Framework;
+using TMPro;
 
 public class OrderSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject receipt_prefab;
     [SerializeField] private int max_order_num = 6;
+    [SerializeField] private float game_time_lim = 180.0f;
+    [SerializeField] private TMP_Text timer_display;
     private int current_order_count = 0;
     private int accum_order_count = 0;
+    private static bool is_in_game = false;
     private static Dictionary<Vector3, GameObject> position_existance;
 
     void Start()
@@ -19,7 +25,11 @@ public class OrderSpawner : MonoBehaviour
             Vector3 pos = new Vector3(235.0f + (i * interval), 112.0f, 0.0f);
             position_existance[pos] = null;
         }
+        StartCoroutine(GameTimer());
+        StartCoroutine(OrderIssuer());
+        StartCoroutine(GameDisplayer());
     }
+
     public void PopulateReceipt()
     {
         if (current_order_count >= max_order_num)
@@ -71,5 +81,41 @@ public class OrderSpawner : MonoBehaviour
     public void TestBtn()
     {
         PopulateReceipt();
+    }
+
+    IEnumerator GameTimer()
+    {
+        is_in_game = true;
+        yield return new WaitForSeconds(game_time_lim);
+        is_in_game = false;
+    }
+
+    IEnumerator OrderIssuer()
+    {
+        while (!is_in_game)
+        {
+            yield return null;
+        }
+        while (is_in_game)
+        {
+            PopulateReceipt();
+            int random_interval = UnityEngine.Random.Range(3, 6);
+            yield return new WaitForSeconds(random_interval);
+        }
+    }
+
+    IEnumerator GameDisplayer()
+    {
+        int timer_counter = (int)game_time_lim;
+        while (!is_in_game)
+        {
+            yield return null;
+        }
+        while (is_in_game || game_time_lim < 0)
+        {
+            timer_display.text = "残り時間 : " + timer_counter.ToString() + " s";
+            yield return new WaitForSeconds(1.0f);
+            timer_counter--;
+        }
     }
 }

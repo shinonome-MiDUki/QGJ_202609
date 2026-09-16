@@ -114,7 +114,9 @@ public class Egg : MonoBehaviour
 
     public void SetFocus(bool do_focus)
     {
-        this.gameObject.transform.Find("ray").gameObject.SetActive(do_focus);
+        float alpha = do_focus ? 0.28f : 0.06f;
+        Color color = new Color(0.96f, 0.94f, 0.78f, alpha);
+        this.gameObject.transform.Find("ray").gameObject.GetComponent<UnityEngine.UI.Image>().color = color;
         is_focused[GetMyIdx()] = do_focus;
     }
 
@@ -137,6 +139,16 @@ public class Egg : MonoBehaviour
     public void ResetEggSystem(){
         applied_toppings[GetMyIdx()] = new List<int>();
         SwitchEggStatus(EggCommonParam.EggStatusIndex.NO_EGG);
+        GameObject topping_cvs = GameObject.FindWithTag("topping_cvs");
+        if (topping_cvs != null){
+            Transform children = topping_cvs.GetComponentInChildren<Transform>();
+            if (children.childCount > 0) {
+                foreach(Transform ob in children) {
+                    ob.gameObject.SetActive(false);
+                }
+            }
+        }
         is_cooking[GetMyIdx()] = false;
+        is_new_egg_usable = true;
     }
 }

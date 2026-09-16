@@ -7,8 +7,8 @@ using System;
 public class ScoreSystem : MonoBehaviour
 {
 
-    protected static float current_money = 0.0f;
-    protected static int[] current_comments = new int[2]{0, 0};
+    protected static float current_money = 1000.0f;
+    protected static int[] current_comments = new int[2]{5, 1};
     [SerializeField] private UtilVar utilVar;
 
     protected void SolveResult(

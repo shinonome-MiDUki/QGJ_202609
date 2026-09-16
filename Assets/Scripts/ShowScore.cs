@@ -10,8 +10,10 @@ public class ShowScore : ScoreSystem
 
     void Start()
     {
-        money_text = this.gameObject.transform.GetChild(0).GetComponent<TMP_Text>();
-        star_text = this.gameObject.transform.GetChild(1).GetComponent<TMP_Text>();
+        money_text = this.gameObject.transform.GetChild(1).GetComponent<TMP_Text>();
+        star_text = this.gameObject.transform.GetChild(2).GetComponent<TMP_Text>();
+        money_text.text = "残高 : " + current_money.ToString();
+        star_text.text = "口コミ : " + ((double)current_comments[0] / current_comments[1]).ToString("F1");
     }
 
     public void UpdateResultSystem(
@@ -30,15 +32,17 @@ public class ShowScore : ScoreSystem
             waiting_time
         );
 
-        money_text.text = "Money : " + current_money.ToString();
+        money_text.text = "残高 : " + current_money.ToString();
         if (current_comments[1] != 0){
-            star_text.text = "Star : " + (current_comments[0] / current_comments[1]).ToString();
+            star_text.text = "口コミ : " + ((double)current_comments[0] / current_comments[1]).ToString("F1");
         }
     }
     
     public void UiLoseNEggs(int n)
     {
         LoseNEggs(n);
-        money_text.text = "Money : " + current_money.ToString();
+        money_text.text = "残高 : " + current_money.ToString();
     }
+
+
 }

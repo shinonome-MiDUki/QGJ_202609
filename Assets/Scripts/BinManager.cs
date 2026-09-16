@@ -55,14 +55,12 @@ public class BinManager : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         {
             target_parent_gobj.GetComponent<Egg>().ResetEggSystem();
             showScore.UiLoseNEggs(1);
-            print("Reset");
-            return;
         }
         else
         {
             this.transform.position = drag_start_pos;
-            return;
         }
+        this.transform.position = drag_start_pos;
         
     }
     

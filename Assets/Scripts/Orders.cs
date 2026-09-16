@@ -9,6 +9,7 @@ public class Orders : MonoBehaviour
     private EggCommonParam.EggStatusIndex ordered_egg_status;
     private List<EggCommonParam.ToppingsType> ordered_toppings_list;
     private List<int> ordered_toppings_idx_list;
+    [SerializeField] private UtilVar utilVar;
     private float time_elapsed = 0.0f;
     private bool is_timer_working = false;
     void Start()
@@ -16,7 +17,12 @@ public class Orders : MonoBehaviour
         ordered_egg_status = GetRandomEggStatus();
         ordered_toppings_list = GetRandomToppingTypes();
         TMP_Text order_text = this.transform.Find("order_content").GetComponent<TMP_Text>();
-        order_text.text = ordered_egg_status + "\n\n" + String.Join("\n", ordered_toppings_list);
+        List<string> topping_list_jpn = new List<string>();
+        foreach (EggCommonParam.ToppingsType x in ordered_toppings_list)
+        {
+            topping_list_jpn.Add(utilVar.toppings_name_e2j[x]);
+        }
+        order_text.text = utilVar.egg_status_name_e2j[ordered_egg_status]+ "\n\n" + String.Join("\n", topping_list_jpn);
         time_elapsed = 0.0f;
         is_timer_working = true;
     }

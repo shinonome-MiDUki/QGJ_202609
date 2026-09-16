@@ -61,13 +61,7 @@ public class OrderDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
                 egg_applied_status,
                 time_elapsed
             );
-            //Debugcode
-            print("Egg ordered status: " + egg_ordered_status);
-            print("Egg applied status: " + egg_applied_status);
-            print("Egg ordered toppings: " + string.Join(",", egg_ordered_toppings));
-            print("Egg applied toppings: " + string.Join(",", egg_applied_toppings));
-            print("*******");
-            //DebugEnd
+    
             return;
         }
         else
