@@ -9,11 +9,12 @@ public class LensOperation : EggStatusSlider
     [SerializeField] private float key_sensitivity = 0.6f;
     [SerializeField] private float factor_sensitivity = 1.0f;
     [SerializeField] private RaySpreading raySpreading;
+    
     private GameObject lens_gobj;
 
     protected override void Start()
     {
-        base.Start();
+        //base.Start();
 
         lens_gobj = this.gameObject.transform.Find("lens").gameObject;
         RectTransform lens_rt = lens_gobj.GetComponent<RectTransform>();
@@ -24,7 +25,7 @@ public class LensOperation : EggStatusSlider
 
     protected override void Update()
     {
-        base.Update();
+        //base.Update();
 
         if (!is_focused[GetMyIdx()])
         {
@@ -70,8 +71,8 @@ public class LensOperation : EggStatusSlider
         factor = -0.3f + 1.8f * factor;
         raySpreading.RefreshMesh(height - 200.0f, factor * 3.2f);
 
-        factor = Math.Abs(max_height - height) / Math.Abs(max_height - min_height) + 1.0f;
-        factor += factor_sensitivity;
-        AdjustCookingSpeed(factor);
+        factor = Math.Abs(max_height - height) / Math.Abs(max_height - min_height);
+        factor *= factor_sensitivity;
+        AdjustCookingSpeed(factor + 1.0f);
     }
 }

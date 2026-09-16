@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: UtilVar
   m_EditorClassIdentifier: Assembly-CSharp::UtilVar
   egg_cost: 30
-  play_time: 60
+  play_time: 20

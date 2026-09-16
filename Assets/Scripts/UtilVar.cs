@@ -37,4 +37,5 @@ public class UtilVar : ScriptableObject
     };
     public float egg_cost = 30.0f;
     public float play_time = 60.0f;
+    [HideInInspector] public static bool is_success = true;
 }

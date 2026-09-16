@@ -7,7 +7,6 @@ public class BinManager : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     [SerializeField] private Sprite bin_opened;
     [SerializeField] private Sprite bin_closed;
-    [SerializeField] private ShowScore showScore;
     [SerializeField] private SoundAssetRef soundAssetRef;
     [SerializeField] private AudioSource se_audiosource;
     private Vector3 drag_start_pos;
@@ -56,7 +55,6 @@ public class BinManager : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         if (target_parent_gobj_name.Contains("egg_system"))
         {
             target_parent_gobj.GetComponent<Egg>().ResetEggSystem();
-            showScore.UiLoseNEggs(1);
         }
         else
         {

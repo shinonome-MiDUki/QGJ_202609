@@ -42,10 +42,10 @@ public class ToppingsScatterManager : Egg
             return;
         }
 
-        if (!is_focused[my_idx])
-        {
-            return;
-        }
+        // if (!is_focused[my_idx])
+        // {
+        //     return;
+        // }
         if (param.current_active_topping == EggCommonParam.ToppingsType.NONE)
         {
             return;
@@ -54,6 +54,6 @@ public class ToppingsScatterManager : Egg
         AddTopping(param.current_active_topping);
         applied_toppings[my_idx].Add((int)param.current_active_topping);
         se_audiosource.PlayOneShot(soundAssetRef.toppings_se[(int)param.current_active_topping]);
-        param.current_active_topping = EggCommonParam.ToppingsType.NONE;
+        //param.current_active_topping = EggCommonParam.ToppingsType.NONE;
     }
 }

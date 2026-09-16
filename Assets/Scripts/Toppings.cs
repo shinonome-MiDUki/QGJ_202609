@@ -4,13 +4,14 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System;
-using Unity.VisualScripting;
 
 public class Toppings : MonoBehaviour
 {
     public EggCommonParam param;
     [SerializeField] private SoundAssetRef soundAssetRef;
     [SerializeField] private AudioSource se_audiosource;
+
+    private UnityEngine.UI.Image w_back;
 
     void Start()
     {
@@ -27,48 +28,43 @@ public class Toppings : MonoBehaviour
             topping_button_evt.triggers = new List<EventTrigger.Entry>();
         }
 
-        // EventTrigger.Entry entry_enter = new EventTrigger.Entry();
-        // if (entry_enter == null)
+        // w_back = topping_btn.GetComponentInChildren<UnityEngine.UI.Image>();
+        // if (w_back != null)
         // {
-        //     entry_enter = new EventTrigger.Entry();
+        //     w_back.enabled = false;
         // }
-        // entry_enter.eventID = EventTriggerType.PointerEnter;
-        // entry_enter.callback.AddListener((data) => ShowNote((PointerEventData)data));
-        // topping_button_evt.triggers.Add(entry_enter);
 
-        // EventTrigger.Entry entry_exit = new EventTrigger.Entry();
-        // if (entry_exit == null)
-        // {
-        //     entry_exit = new EventTrigger.Entry();
-        // }
-        // entry_enter.eventID = EventTriggerType.PointerExit;
-        // entry_exit.callback.AddListener((data) => HideNote((PointerEventData)data));
-        // topping_button_evt.triggers.Add(entry_exit);
+        // EventTrigger.Entry enterEntry = new EventTrigger.Entry();
+        // enterEntry.eventID = EventTriggerType.PointerEnter;
+        // enterEntry.callback.AddListener((data) => { EnterArea((PointerEventData)data); });
+        // topping_button_evt.triggers.Add(enterEntry);
 
-        TMP_Text btn_text = topping_btn.GetComponentInChildren<TMP_Text>();
-        btn_text.enabled = false;
+        // EventTrigger.Entry exitEntry = new EventTrigger.Entry();
+        // exitEntry.eventID = EventTriggerType.PointerExit;
+        // exitEntry.callback.AddListener((data) => { ExitArea((PointerEventData)data); });
+        // topping_button_evt.triggers.Add(exitEntry);
     }
 
     private void OnClicked()
     {
-        se_audiosource.PlayOneShot(soundAssetRef.select_topping_se);
-        EggCommonParam.ToppingsType clicked_topping = (EggCommonParam.ToppingsType)Enum.Parse(typeof(EggCommonParam.ToppingsType), this.name);
-        param.current_active_topping = clicked_topping;        
+        if (se_audiosource != null && soundAssetRef != null)
+        {
+            se_audiosource.PlayOneShot(soundAssetRef.select_topping_se);
+        }
+
+        if (Enum.TryParse(this.name, out EggCommonParam.ToppingsType clicked_topping))
+        {
+            param.current_active_topping = clicked_topping;
+        }
     }
 
-    private void ShowNote(PointerEventData data)
+    private void EnterArea(PointerEventData data)
     {
-        Button topping_btn = this.GetComponent<Button>();
-        TMP_Text btn_text = topping_btn.GetComponentInChildren<TMP_Text>();
-        btn_text.text = this.name;
-        btn_text.enabled = true;
+        print("X");
     }
 
-    private void HideNote(PointerEventData data)
+    private void ExitArea(PointerEventData data)
     {
-        Button topping_btn = this.GetComponent<Button>();
-        TMP_Text btn_text = topping_btn.GetComponentInChildren<TMP_Text>();
-        btn_text.enabled = false;
+        print("O");
     }
-
 }

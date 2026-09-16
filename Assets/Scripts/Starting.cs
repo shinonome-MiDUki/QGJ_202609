@@ -3,96 +3,95 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.Collections.Generic;
+
+
+public interface IExecutable
+{
+    void First_BTN();
+    void Second_BTN();
+    void Third_BTN();
+    List<string> GetUiStr();
+}
+
+public class FirstStart : IExecutable
+{
+    public void First_BTN()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
+
+    public void Second_BTN()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+
+    public void Third_BTN()
+    {
+    #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false; 
+    #else
+        Application.Quit(); 
+    #endif 
+    }
+
+    public List<string> GetUiStr()
+    {
+        return new List<string>()
+        {
+            "スタート", "チュートリアル", "終了"
+        };
+    }
+}
+
+public class LaterStart : IExecutable
+{
+    public void First_BTN()
+    {
+        DifficultyControl.difficulty = 0;
+        SceneManager.LoadScene("MainScene");
+    }
+
+    public void Second_BTN()
+    {
+        DifficultyControl.difficulty = 1;
+        SceneManager.LoadScene("MainScene");
+    }
+
+    public void Third_BTN()
+    {
+        DifficultyControl.difficulty = 2;
+        SceneManager.LoadScene("MainScene");
+    }
+
+    public List<string> GetUiStr()
+    {
+        return new List<string>()
+        {
+            "易", "中", "難"
+        };
+    }
+}
 
 public class Starting : MonoBehaviour
-{
-    [Header("UI要素の参照")]
-    [SerializeField] private Button firstButton;    // 1番上のボタン（切替用）
-    [SerializeField] private Button secondButton1;   // 2番目のボタン
-    [SerializeField] private Button thirdButton2;   // 3番目のボタン
-
-    [SerializeField] private TextMeshProUGUI firstButtonText;
-    [SerializeField] private TextMeshProUGUI secondButtonText;
-    [SerializeField] private TextMeshProUGUI thirdButtonText;
-private int currentMode = 0;
+{    
+    private static bool is_first_start = true;
 
     void Start()
     {
-        // ボタンがクリックされたときの処理をコード側で登録
-        firstButton.onClick.AddListener(OnfirstButtonClicked);
-        secondButton1.onClick.AddListener(OnsecondButtonClicked);
-        thirdButton2.onClick.AddListener(OnthirdButtonClicked);
+        IExecutable obj = is_first_start ? new FirstStart() : new LaterStart();
+        
+        Button first_btn = this.gameObject.transform.GetChild(0).gameObject.GetComponent<Button>();
+        first_btn.onClick.AddListener(obj.First_BTN);
+        first_btn.GetComponentInChildren<TextMeshProUGUI>().text = obj.GetUiStr()[0];
+        Button second_btn = this.gameObject.transform.GetChild(1).gameObject.GetComponent<Button>();
+        second_btn.onClick.AddListener(obj.Second_BTN);
+        second_btn.GetComponentInChildren<TextMeshProUGUI>().text = obj.GetUiStr()[1];
+        Button third_btn = this.gameObject.transform.GetChild(2).gameObject.GetComponent<Button>();
+        third_btn.onClick.AddListener(obj.Third_BTN);
+        third_btn.GetComponentInChildren<TextMeshProUGUI>().text = obj.GetUiStr()[2];
 
-        // 最初の状態をセット
-        UpdateUI();
-    }
-
-    // 1番上のボタンを押したとき（モード切替）
-    void OnfirstButtonClicked()
-    {
-        if (currentMode == 0) {
-            currentMode = (currentMode + 1) % 2;
-        }
-        else
-        {
-            PlayerPrefs.SetInt("difficulty", 1);
-            SceneManager.LoadScene("Game");
-        }
-        Debug.Log("モードを切り替えました: " + currentMode);
-        UpdateUI();
-    }
-
-    
-    void UpdateUI()
-    {
-        if (currentMode == 0)
-        {
-            firstButtonText.text = "スタート";
-            secondButtonText.text = "チュートリアル";
-            thirdButtonText.text = "終了";
-        }
-        else if (currentMode == 1)
-        {
-            firstButtonText.text = "イージー";
-            secondButtonText.text = "ノーマル";
-            thirdButtonText.text = "ハード";
-        }
-    }
-
-    // 2番目のボタンを押したときの実装内容
-    void OnsecondButtonClicked()
-    {
-        if (currentMode == 0)
-        {
-            SceneManager.LoadScene("Tutorial");
-        }
-        else if (currentMode == 1)
-        {
-            PlayerPrefs.SetInt("difficulty", 2);
-            SceneManager.LoadScene("Game");
-        }
-    }
-
-    // 3番目のボタンを押したときの実装内容
-    void OnthirdButtonClicked()
-    {
-        if (currentMode == 0)
-        {
-            QuitGame();
-        }
-        else if (currentMode == 1)
-        {
-            PlayerPrefs.SetInt("difficulty", 3);
-            SceneManager.LoadScene("Game");
-        }
-    }
-    void QuitGame()
-    {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false; // エディタ実行時は停止
-#else
-        Application.Quit(); 
-#endif
+        is_first_start = false;
     }
 }
 

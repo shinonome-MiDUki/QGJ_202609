@@ -15,6 +15,7 @@ public class Egg : MonoBehaviour
 {
     public SoundAssetRef soundAssetRef;
     public AudioSource se_audiosource;
+    [SerializeField] private ShowScore showScore;
     public enum EggStatusIndex
     {
         UNBROKEN = 0,
@@ -73,6 +74,7 @@ public class Egg : MonoBehaviour
                 is_egg_prepared = false;
                 is_new_egg_usable = false;
                 is_cooking[GetMyIdx()] = true;
+                showScore.UiLoseNEggs(1);
             }
             else
             {
@@ -83,7 +85,6 @@ public class Egg : MonoBehaviour
         }
 
     }
-
 
     protected int GetMyIdx()
     {

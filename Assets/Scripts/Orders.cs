@@ -18,7 +18,14 @@ public class Orders : MonoBehaviour
     void Start()
     {
         ordered_egg_status = GetRandomEggStatus();
-        ordered_toppings_list = GetRandomToppingTypes();
+        if (ordered_egg_status == EggCommonParam.EggStatusIndex.RAW)
+        {
+            ordered_toppings_list  = new List<EggCommonParam.ToppingsType>();
+        }
+        else
+        {
+            ordered_toppings_list = GetRandomToppingTypes();
+        }
         TMP_Text order_text = this.transform.Find("order_content").GetComponent<TMP_Text>();
         List<string> topping_list_jpn = new List<string>();
         foreach (EggCommonParam.ToppingsType x in ordered_toppings_list)
@@ -75,7 +82,7 @@ public class Orders : MonoBehaviour
         ordered_toppings_idx_list = new List<int>();
         List<int> ordered_already = new List<int>();
         int toppings_count = UnityEngine.Random.Range(
-            0, Enum.GetNames(typeof(EggCommonParam.ToppingsType)).Length - 1
+            0, DifficultyControl.GetMaxToppingNum() + 1
         );
 
         if (toppings_count == 0)

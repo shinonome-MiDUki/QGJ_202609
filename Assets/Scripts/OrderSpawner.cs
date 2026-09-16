@@ -15,9 +15,11 @@ public class OrderSpawner : MonoBehaviour
     private int accum_order_count = 0;
     private static bool is_in_game = false;
     private static Dictionary<Vector3, GameObject> position_existance;
+    private int[] min_max_interval = new int[2];
 
     void Start()
     {
+        min_max_interval = DifficultyControl.GetOrderInterval();
         position_existance = new Dictionary<Vector3, GameObject>();
         float interval = 1450 / (max_order_num - 1);
         for (int i = 0; i < max_order_num; i++)
@@ -25,6 +27,7 @@ public class OrderSpawner : MonoBehaviour
             Vector3 pos = new Vector3(235.0f + (i * interval), 112.0f, 0.0f);
             position_existance[pos] = null;
         }
+        StopAllCoroutines();
         StartCoroutine(GameTimer());
         StartCoroutine(OrderIssuer());
         StartCoroutine(GameDisplayer());
@@ -88,6 +91,8 @@ public class OrderSpawner : MonoBehaviour
         is_in_game = true;
         yield return new WaitForSeconds(game_time_lim);
         is_in_game = false;
+        UtilVar.is_success = true;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Ending");
     }
 
     IEnumerator OrderIssuer()
@@ -99,7 +104,9 @@ public class OrderSpawner : MonoBehaviour
         while (is_in_game)
         {
             PopulateReceipt();
-            int random_interval = UnityEngine.Random.Range(3, 6);
+            int random_interval = UnityEngine.Random.Range(
+                min_max_interval[0], min_max_interval[1] + 1
+            );
             yield return new WaitForSeconds(random_interval);
         }
     }

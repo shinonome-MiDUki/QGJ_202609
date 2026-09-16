@@ -2,14 +2,18 @@ using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
 using UnityEngine.U2D.IK;
+using Unity.VisualScripting;
 
 public class ShowScore : ScoreSystem
 {
     private TMP_Text money_text;
     private TMP_Text star_text;
+    [SerializeField] private UtilVar utilVar;
 
     void Start()
     {
+        current_money = 500.0f;
+        current_comments = new int[2]{5, 1};
         money_text = this.gameObject.transform.GetChild(1).GetComponent<TMP_Text>();
         star_text = this.gameObject.transform.GetChild(2).GetComponent<TMP_Text>();
         money_text.text = "残高 : " + current_money.ToString();
@@ -31,6 +35,13 @@ public class ShowScore : ScoreSystem
             applied_status,
             waiting_time
         );
+
+        if (current_money <= 0.0f)
+        {
+            UtilVar.is_success = false;
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Ending");
+            return;
+        }
 
         money_text.text = "残高 : " + current_money.ToString();
         if (current_comments[1] != 0){

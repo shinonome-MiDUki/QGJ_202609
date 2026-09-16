@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class EggCommonParam : ScriptableObject
 {
     public List<Sprite> topping_list;
+    public List<Sprite> topping_w_list;
     public enum ToppingsType
     {
         KETCHUP = 0,

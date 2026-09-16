@@ -316,6 +316,7 @@ RectTransform:
   m_Children:
   - {fileID: 484942833}
   - {fileID: 449654117}
+  - {fileID: 1451341600}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1406,7 +1407,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1073143892808419726, guid: d53950ee4dd4e4efd82d5a2035308f52, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1490930803}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d53950ee4dd4e4efd82d5a2035308f52, type: 3}
 --- !u!1 &993707266
@@ -1909,6 +1913,156 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385319750}
   m_CullTransparentMesh: 1
+--- !u!1 &1451341599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1451341600}
+  - component: {fileID: 1451341602}
+  - component: {fileID: 1451341601}
+  m_Layer: 5
+  m_Name: wall (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1451341600
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451341599}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.9625, y: 1.8136897, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 254314814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -418}
+  m_SizeDelta: {x: 981, y: 172}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1451341601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451341599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -6608420920204985208, guid: 9530f1c4e8a884626a966a65c1677c6c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1451341602
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451341599}
+  m_CullTransparentMesh: 1
+--- !u!1 &1490930802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1490930803}
+  - component: {fileID: 1490930805}
+  - component: {fileID: 1490930804}
+  m_Layer: 5
+  m_Name: white_base
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1490930803
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490930802}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 348565777}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1490930804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490930802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1490930805
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490930802}
+  m_CullTransparentMesh: 1
 --- !u!1 &1665136920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2063,7 +2217,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BinManager
   bin_opened: {fileID: 21300000, guid: 9d50ffb5e863c4cd98334344b4b2282d, type: 3}
   bin_closed: {fileID: 21300000, guid: 4d00616d1791b49e7b8074240bdfbf42, type: 3}
-  showScore: {fileID: 2143177768}
   soundAssetRef: {fileID: 11400000, guid: 51de1d547470041798d4578b782e199a, type: 2}
   se_audiosource: {fileID: 925764431}
 --- !u!114 &1711705250
@@ -2641,6 +2794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShowScore
   utilVar: {fileID: 11400000, guid: b970b6f64f623481e89efee769a4196d, type: 2}
+  utilVar: {fileID: 11400000, guid: b970b6f64f623481e89efee769a4196d, type: 2}
 --- !u!1001 &645815115078885982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2810,6 +2964,10 @@ PrefabInstance:
       propertyPath: param
       value: 
       objectReference: {fileID: 11400000, guid: 3551b4ec4ec994b9ab31ee6fa917c6d0, type: 2}
+    - target: {fileID: 57883793188564484, guid: c5805a7d678804851be4bc771f152e58, type: 3}
+      propertyPath: showScore
+      value: 
+      objectReference: {fileID: 2143177768}
     - target: {fileID: 57883793188564484, guid: c5805a7d678804851be4bc771f152e58, type: 3}
       propertyPath: soundAssetRef
       value: 
@@ -2995,6 +3153,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: b970b6f64f623481e89efee769a4196d, type: 2}
     - target: {fileID: 5865510684403219340, guid: c5805a7d678804851be4bc771f152e58, type: 3}
+      propertyPath: showScore
+      value: 
+      objectReference: {fileID: 2143177768}
+    - target: {fileID: 5865510684403219340, guid: c5805a7d678804851be4bc771f152e58, type: 3}
       propertyPath: soundAssetRef
       value: 
       objectReference: {fileID: 11400000, guid: 51de1d547470041798d4578b782e199a, type: 2}
@@ -3075,6 +3237,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: b970b6f64f623481e89efee769a4196d, type: 2}
     - target: {fileID: 8040327670425930002, guid: c5805a7d678804851be4bc771f152e58, type: 3}
+      propertyPath: showScore
+      value: 
+      objectReference: {fileID: 2143177768}
+    - target: {fileID: 8040327670425930002, guid: c5805a7d678804851be4bc771f152e58, type: 3}
       propertyPath: soundAssetRef
       value: 
       objectReference: {fileID: 11400000, guid: 51de1d547470041798d4578b782e199a, type: 2}
@@ -3082,6 +3248,10 @@ PrefabInstance:
       propertyPath: se_audiosource
       value: 
       objectReference: {fileID: 925764431}
+    - target: {fileID: 8040327670425930002, guid: c5805a7d678804851be4bc771f152e58, type: 3}
+      propertyPath: factor_sensitivity
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8262729829106240361, guid: c5805a7d678804851be4bc771f152e58, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

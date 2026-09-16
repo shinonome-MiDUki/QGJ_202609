@@ -1,63 +1,48 @@
-using UnityEngine;
-using UnityEngine.EventSystems; 
-using UnityEngine.SceneManagement; 
+
+using System;
 using TMPro;
+using Unity.VisualScripting;
+using UnityEngine;
 
 
-
-public enum StructureType
+public class Ending : MonoBehaviour
 {
-    None,      // 何もしない
-    Restart,  // タイトル画面,
-    QuitApp     // アプリを終了
-}
+    [SerializeField] private Sprite game_over_sprite;
+    [SerializeField] private Sprite game_success_sprite;
+    [SerializeField] private UnityEngine.UI.Image bg;
+    [SerializeField] private TMP_Text result_text;
 
-public class Ending : MonoBehaviour, IPointerClickHandler
-{
-    
-    [Header("この構造物の種類を設定")]
-    public StructureType structureType; // インスペクターで選択可能にする
-
-    public void Start()
+    public void GoToEndScene()
     {
-    }
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        if (eventData.button != PointerEventData.InputButton.Left) return;
-
-        Debug.Log(gameObject.name + "is clicked.");
-
-        ExecuteStructureAction();
-    }
-
-    void ExecuteStructureAction()
-    {
-        switch (structureType)
+        float current_rating = ((float)ScoreSystem.current_comments[0] / ScoreSystem.current_comments[1]);
+        print(UtilVar.is_success);
+        if (UtilVar.is_success)
         {
-            case StructureType.Restart:
-                Debug.Log("button restart");
-                SceneManager.LoadScene("Start");
-                break;
-
-
-            case StructureType.QuitApp:
-                Debug.Log("button quit");
-                QuitGame();
-                break;
-
-            default:
-                Debug.LogWarning("Unknown structure type: " + structureType);
-                break;
+            bg.sprite = game_success_sprite;
+            result_text.text = "おめでとう!!!\n\n" 
+                + "残高 : " + ScoreSystem.current_money.ToString() + "円\n"
+                + "口コミ : " + current_rating.ToString("F1");
+        }
+        else
+        {
+            bg.sprite = game_over_sprite;
+            result_text.text = "GAME OVER\n\n" 
+                + "残高 : 0円" + "\n"
+                + "口コミ : " + current_rating.ToString("F1");
         }
     }
 
-    // アプリ終了処理（エディタ対策込み）
-    void QuitGame()
+    public void BackToMenu()
     {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false; // エディタ実行時は停止
-#else
-        Application.Quit(); // 本番ビルド時はアプリ終了
-#endif
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Starting");
+    }
+
+    public void QuitGame()
+    {
+    #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false; // エディタ実行時は停止
+    #else
+            Application.Quit(); // 本番ビルド時はアプリ終了
+    #endif
     }
 }

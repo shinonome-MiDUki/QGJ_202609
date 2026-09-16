@@ -6,20 +6,19 @@ public class EggStatusSlider : Egg
 {
     [SerializeField] private UtilVar utilVar;
     private Slider status_slider;
-    private float speed_factor;
+    private static float[] speed_factor = new float[3]{1.0f, 1.0f, 1.0f};
     
 
     protected override void Start()
     {
-        base.Start();
+        //base.Start();
         
-        speed_factor = 1.0f;
         status_slider = this.gameObject.transform.Find("status_bar").GetComponent<Slider>();
     }
 
     protected override void Update()
     {
-        base.Update();
+        //base.Update();
 
         if (!is_cooking[GetMyIdx()])
         {
@@ -27,7 +26,8 @@ public class EggStatusSlider : Egg
             return;
         }
         float standard_increment = Time.deltaTime * (1 / utilVar.play_time);
-        status_slider.value += standard_increment * speed_factor;
+        status_slider.value += standard_increment * speed_factor[GetMyIdx()];
+        print(speed_factor[GetMyIdx()]); print(";;;;;;");
 
         float current_factor = status_slider.value;
         if (current_factor >= 0.0f && current_factor < 0.25f && egg_status[GetMyIdx()] != EggCommonParam.EggStatusIndex.RAW){
@@ -53,6 +53,6 @@ public class EggStatusSlider : Egg
 
     protected void AdjustCookingSpeed(float new_speed_factor)
     {
-        speed_factor = new_speed_factor;
+        speed_factor[GetMyIdx()] = new_speed_factor;
     }
 }
