@@ -47,7 +47,8 @@ public class Orders : MonoBehaviour
 
     private List<EggCommonParam.ToppingsType> GetRandomToppingTypes()
     {
-        List<EggCommonParam.ToppingsType> ordered_toppings_list = new List<EggCommonParam.ToppingsType>();
+        ordered_toppings_list = new List<EggCommonParam.ToppingsType>();
+        ordered_toppings_idx_list = new List<int>();
         List<int> ordered_already = new List<int>();
         int toppings_count = UnityEngine.Random.Range(
             0, Enum.GetNames(typeof(EggCommonParam.ToppingsType)).Length - 1

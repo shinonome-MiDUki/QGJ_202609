@@ -57,13 +57,11 @@ public class OrderSpawner : MonoBehaviour
             {
                 continue;
             }
-            print("Hello");
             target_receipt_pos = pair.Key;
             break;
         }
         if (target_receipt_gobj != null)
         {
-            print(target_receipt_pos);
             position_existance[target_receipt_pos] = null;
             Destroy(target_receipt_gobj);
             current_order_count--;

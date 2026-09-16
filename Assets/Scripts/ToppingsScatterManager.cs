@@ -32,7 +32,7 @@ public class ToppingsScatterManager : Egg
         bool is_parsed = int.TryParse(current_parent_gobj_name.Split('_').Last(), out int my_idx);
         my_idx = is_parsed ? my_idx : 0;
 
-        if (applied_toppings.Contains((int)param.current_active_topping)){
+        if (applied_toppings[my_idx].Contains((int)param.current_active_topping)){
             return;
         }
         if (egg_status[my_idx] == EggCommonParam.EggStatusIndex.NO_EGG || egg_status[my_idx] == EggCommonParam.EggStatusIndex.UNBROKEN)
@@ -50,7 +50,7 @@ public class ToppingsScatterManager : Egg
         }
 
         AddTopping(param.current_active_topping);
-        applied_toppings.Add((int)param.current_active_topping);
+        applied_toppings[my_idx].Add((int)param.current_active_topping);
         param.current_active_topping = EggCommonParam.ToppingsType.NONE;
     }
 }

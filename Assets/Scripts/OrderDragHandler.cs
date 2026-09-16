@@ -8,7 +8,7 @@ public class OrderDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
     private CanvasGroup canvasGroup;
     private Vector3 drag_start_pos;
     [SerializeField] private OrderSpawner orderSpawner;
-    [SerializeField] private ScoreSystem scoreSystem;
+    [SerializeField] private ShowScore showScore;
 
     private void Awake()
     {
@@ -43,19 +43,31 @@ public class OrderDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
         string target_parent_gobj_name = target_parent_gobj.name;
         if (target_parent_gobj_name.Contains("egg_system"))
         {
-            orderSpawner.PopReceipt(this.name);
             List<int> egg_applied_toppings = target_parent_gobj.GetComponent<Egg>().GetEggSystemInfo().egg_applied_toppings;
             int egg_applied_status = (int)target_parent_gobj.GetComponent<Egg>().GetEggSystemInfo().egg_final_status;
+            if (egg_applied_status == 0 || egg_applied_status == 5)
+            {
+                this.transform.position = drag_start_pos;
+                return;
+            }
             List<int> egg_ordered_toppings = this.gameObject.GetComponent<Orders>().GetOrderedToppings();
             int egg_ordered_status = (int) this.gameObject.GetComponent<Orders>().GetOrderedEggStatus();
             float time_elapsed = this.gameObject.GetComponent<Orders>().StopAndGetTimerTime();
-            scoreSystem.SolveResult(
+            orderSpawner.PopReceipt(this.name);
+            showScore.UpdateResultSystem(
                 egg_ordered_toppings,
                 egg_applied_toppings,
                 egg_ordered_status,
                 egg_applied_status,
                 time_elapsed
             );
+            //Debugcode
+            print("Egg ordered status: " + egg_ordered_status);
+            print("Egg applied status: " + egg_applied_status);
+            print("Egg ordered toppings: " + string.Join(",", egg_ordered_toppings));
+            print("Egg applied toppings: " + string.Join(",", egg_applied_toppings));
+            print("*******");
+            //DebugEnd
             return;
         }
         else

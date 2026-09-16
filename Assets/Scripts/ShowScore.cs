@@ -1,50 +1,38 @@
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
-using JetBrains.Annotations;
+using UnityEngine.U2D.IK;
 
-public class ShowScore : MonoBehaviour
+public class ShowScore : ScoreSystem
 {
-    private bool is_show_score;
-    public float star;
-    [SerializeField] private TextMeshProUGUI scoreTextField;
-    Dictionary<float, string> starstring = new Dictionary<float, string>()
-    {
-        {0f,"☆"},
-        {0.5f,"☆"},
-        {1f,"★"},
-        {1.5f,"★☆"},
-        {2f,"★★"},
-        {2.5f,"★★☆"},
-        {3f,"★★★"},
-        {3.5f,"★★★☆"},
-        {4f,"★★★★"},
-        {4.5f,"★★★★☆"},
-        {5f,"★★★★★"}
-    };
+    private TMP_Text money_text;
+    private TMP_Text star_text;
 
-    void Update()
+    void Start()
     {
-        if (scoreTextField == null)
-        {
-            scoreTextField = GetComponent<TextMeshProUGUI>();
-        }
-        if (scoreTextField != null)
-        {
-            float star = PlayerPrefs.GetFloat("star", 0f);
-            float money = PlayerPrefs.GetFloat("money", 0f);
-            if (is_show_score == false)
-            {
-                scoreTextField.text = "所持金: " + money;
-            }
-            else
-            {
-            scoreTextField.text = "評価: " + starstring[star] + "\n所持金: " + money;
-            }
-        }
-        else
-        {
-            Debug.LogError("ScoreTextFieldが割り当てられていません！");
+        money_text = this.gameObject.transform.GetChild(0).GetComponent<TMP_Text>();
+        star_text = this.gameObject.transform.GetChild(1).GetComponent<TMP_Text>();
+    }
+
+    public void UpdateResultSystem(
+        List<int> ordered_toppings,
+        List<int> applied_toppings,
+        int ordered_status,
+        int applied_status,
+        float waiting_time
+    )
+    {
+        SolveResult(
+            ordered_toppings,
+            applied_toppings,
+            ordered_status,
+            applied_status,
+            waiting_time
+        );
+
+        money_text.text = "Money : " + current_money.ToString();
+        if (current_comments[1] != 0){
+            star_text.text = "Star : " + (current_comments[0] / current_comments[1]).ToString();
         }
     }
 }

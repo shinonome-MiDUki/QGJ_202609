@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: EggCommonParam
   m_EditorClassIdentifier: Assembly-CSharp::EggCommonParam
   topping_list:
-  - {fileID: -9032648240131754058, guid: 634a8cc43ab3e47d5b51020e3f99a354, type: 3}
-  - {fileID: -8173923911043149387, guid: 6d14715a95a8b47cabf268bfd5dababf, type: 3}
-  - {fileID: 8374363231432968964, guid: f022632cb114e411cb0604ad8886356e, type: 3}
-  - {fileID: -67861805864525146, guid: 013bfa4b47e2b4e75ba77c362a830479, type: 3}
-  - {fileID: -6604776812909603590, guid: 6bfb6a3b92b794fde8fc2f856336fee6, type: 3}
-  current_active_topping: 1
+  - {fileID: -242998767754654418, guid: f06de59f27dc14f94a525f915535cb92, type: 3}
+  - {fileID: -5364384080281257157, guid: 07a2b94548b3f48c4b5b7f3bd31474dc, type: 3}
+  - {fileID: -8030488491940948627, guid: 79b4a40c84c614d46a941b1d96839410, type: 3}
+  - {fileID: 6115675185144426353, guid: df70d9bd0e14d49e1ae0ae389f5ce629, type: 3}
+  - {fileID: -483200118279512870, guid: ce2f40aa0b8a34a6daa14655c0841bcc, type: 3}
+  current_active_topping: 5
+  egg_status_image:
+  - {fileID: 21300000, guid: 23d3a8fd02772466291c76c76cc8d967, type: 3}
+  - {fileID: 21300000, guid: 730e8ea1fa76a443282f4959798104d9, type: 3}
+  - {fileID: 21300000, guid: 53c0d4ff41aad46009314e874eab618f, type: 3}
+  - {fileID: 21300000, guid: 74f6e5170ad984acfa7302efb8c6b6c1, type: 3}
+  - {fileID: 21300000, guid: dfa196e46cf6a4aa4a9dbd2bf80eee97, type: 3}

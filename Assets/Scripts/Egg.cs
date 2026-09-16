@@ -1,14 +1,7 @@
 using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System;
-using Microsoft.Unity.VisualStudio.Editor;
-using UnityEngine.UI;
-using UnityEngine.Rendering.Universal;
-using UnityEngine.InputSystem.Controls;
-using NUnit.Framework;
-using Unity.VisualScripting;
 
 public class Egg : MonoBehaviour
 {
@@ -24,11 +17,9 @@ public class Egg : MonoBehaviour
     }
 
     public EggCommonParam param;
-    protected List<int> applied_toppings = new List<int>(); 
-
+    protected static List<int>[] applied_toppings = new List<int>[3]; 
     private GameObject egg_gobj;
     private bool is_egg_prepared = false;
-    private bool is_new_egg_usable = false;
     protected static bool[] is_cooking = new bool[3];
     public static bool[] is_focused = new bool[3];
     protected static EggCommonParam.EggStatusIndex[] egg_status = new EggCommonParam.EggStatusIndex[3]; 
@@ -40,10 +31,13 @@ public class Egg : MonoBehaviour
 
     protected virtual void Start()
     {
+        for (int i = 0; i < 3; i++)
+        {
+            applied_toppings[i] = new List<int>();
+        }
         egg_gobj = this.gameObject.transform.Find("egg").gameObject;
         SwitchEggStatus(EggCommonParam.EggStatusIndex.NO_EGG);
         is_egg_prepared = false;
-        is_new_egg_usable = true;
         is_cooking[GetMyIdx()] = false;
         is_focused[GetMyIdx()] = false;
         
@@ -51,24 +45,18 @@ public class Egg : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (!is_focused[GetMyIdx()])
+        if (!is_focused[GetMyIdx()] || is_cooking[GetMyIdx()])
         {
             return;
         }
 
-        if (!is_new_egg_usable)
-        {
-            return;
-        }
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (is_egg_prepared)
             {
                 SwitchEggStatus(EggCommonParam.EggStatusIndex.RAW);
                 is_egg_prepared = false;
-                is_new_egg_usable = false;
                 is_cooking[GetMyIdx()] = true;
-                //StartCoroutine(Timer());
             }
             else
             {
@@ -127,7 +115,7 @@ public class Egg : MonoBehaviour
         EggSystemInfo eggSystemInfo = new EggSystemInfo()
         {
             egg_final_status = egg_status[GetMyIdx()],
-            egg_applied_toppings = applied_toppings
+            egg_applied_toppings = applied_toppings[GetMyIdx()]
         };
         return eggSystemInfo;
     }
