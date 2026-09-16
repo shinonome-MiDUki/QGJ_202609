@@ -45,6 +45,7 @@ public class BinManager : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
             return;
         }
         GameObject target_parent_gobj = target_gobj.transform.parent.gameObject;
+        print(target_parent_gobj.name);print("::**");
         int egg_applied_status = (int)target_parent_gobj.GetComponent<Egg>().GetEggSystemInfo().egg_final_status;
         if (egg_applied_status == 5)
         {
@@ -52,7 +53,6 @@ public class BinManager : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
             return;
         }
         string target_parent_gobj_name = target_parent_gobj.name;
-        print(target_parent_gobj_name);
         if (target_parent_gobj_name.Contains("egg_system"))
         {
             target_parent_gobj.GetComponent<Egg>().ResetEggSystem();

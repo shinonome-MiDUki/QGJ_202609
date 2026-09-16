@@ -90,6 +90,10 @@ public class Egg : MonoBehaviour
     }
 
     protected void SwitchEggStatus(EggCommonParam.EggStatusIndex new_status){
+        if (!this.name.Contains("egg_system"))
+        {
+            return;
+        }
         egg_status[GetMyIdx()] = new_status;
         if (!egg_gobj){
             egg_gobj = this.gameObject.transform.Find("egg").gameObject;
@@ -139,11 +143,17 @@ public class Egg : MonoBehaviour
     public void ResetEggSystem(){
         applied_toppings[GetMyIdx()] = new List<int>();
         SwitchEggStatus(EggCommonParam.EggStatusIndex.NO_EGG);
-        GameObject[] topping_gobjs = GameObject.FindGameObjectsWithTag("topping");
-        foreach (GameObject x in topping_gobjs){
-            x.SetActive(false);
+        GameObject parentObj = GameObject.Find("egg_system_" + GetMyIdx().ToString());
+
+        if (parentObj != null) {
+            GameObject[] topping_gobjs = GameObject.FindGameObjectsWithTag("topping");
+            foreach (GameObject x in topping_gobjs){
+                if (x.transform.IsChildOf(parentObj.transform)) {
+                    x.SetActive(false);
+                }
+            }
         }
+
         is_cooking[GetMyIdx()] = false;
-        //is_new_egg_usable = true;
     }
 }

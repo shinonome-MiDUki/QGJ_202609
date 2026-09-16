@@ -28,7 +28,6 @@ public class OrderSpawner : MonoBehaviour
             position_existance[pos] = null;
         }
         StopAllCoroutines();
-        StartCoroutine(GameTimer());
         StartCoroutine(OrderIssuer());
         StartCoroutine(GameDisplayer());
     }
@@ -86,14 +85,6 @@ public class OrderSpawner : MonoBehaviour
         PopulateReceipt();
     }
 
-    IEnumerator GameTimer()
-    {
-        is_in_game = true;
-        yield return new WaitForSeconds(utilVar.game_time_lim);
-        is_in_game = false;
-        UtilVar.is_success = true;
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Ending");
-    }
 
     IEnumerator OrderIssuer()
     {
@@ -114,15 +105,14 @@ public class OrderSpawner : MonoBehaviour
     IEnumerator GameDisplayer()
     {
         int timer_counter = (int)utilVar.game_time_lim;
-        while (!is_in_game)
+        is_in_game = true;
+        for (int i = timer_counter; i >= 0; --i)
         {
-            yield return null;
-        }
-        while (is_in_game || utilVar.game_time_lim < 0)
-        {
-            timer_display.text = "残り時間 : " + timer_counter.ToString() + " s";
+            timer_display.text = "残り時間 : " + i.ToString() + " s";
             yield return new WaitForSeconds(1.0f);
-            timer_counter--;
         }
+        is_in_game = false;
+        UtilVar.is_success = true;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Ending");
     }
 }
