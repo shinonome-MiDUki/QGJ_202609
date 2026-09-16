@@ -74,4 +74,9 @@ public class ScoreSystem : MonoBehaviour
         return personal_star;
     }
 
+    public void LoseNEggs(int n)
+    {
+        current_money -= utilVar.egg_cost * n;
+    }
+
 }

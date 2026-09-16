@@ -133,4 +133,10 @@ public class Egg : MonoBehaviour
         };
         return eggSystemInfo;
     }
+
+    public void ResetEggSystem(){
+        applied_toppings[GetMyIdx()] = new List<int>();
+        SwitchEggStatus(EggCommonParam.EggStatusIndex.NO_EGG);
+        is_cooking[GetMyIdx()] = false;
+    }
 }

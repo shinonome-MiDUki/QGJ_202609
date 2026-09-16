@@ -28,6 +28,7 @@ public class EggStatusSlider : Egg
 
         if (!is_cooking[GetMyIdx()])
         {
+            status_slider.value = 0.0f;
             return;
         }
         float standard_increment = Time.deltaTime * (1 / utilVar.play_time);

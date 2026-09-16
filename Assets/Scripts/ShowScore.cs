@@ -35,4 +35,10 @@ public class ShowScore : ScoreSystem
             star_text.text = "Star : " + (current_comments[0] / current_comments[1]).ToString();
         }
     }
+    
+    public void UiLoseNEggs(int n)
+    {
+        LoseNEggs(n);
+        money_text.text = "Money : " + current_money.ToString();
+    }
 }
