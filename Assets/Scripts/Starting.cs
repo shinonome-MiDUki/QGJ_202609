@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System.Collections.Generic;
 using System;
+using Unity.VisualScripting;
 
 
 public interface IExecutable
@@ -17,6 +18,13 @@ public interface IExecutable
 
 public class FirstStart : IExecutable
 {
+    private readonly Tutorial tutorial;
+
+    public FirstStart(Tutorial tutorial)
+    {
+        this.tutorial = tutorial;
+    }
+
     public void First_BTN()
     {
         SceneManager.LoadScene("MainScene");
@@ -24,7 +32,11 @@ public class FirstStart : IExecutable
 
     public void Second_BTN()
     {
-        SceneManager.LoadScene("Tutorial");
+        if (tutorial == null)
+        {
+            return;
+        }
+        tutorial.ShowTutorial();
     }
 
     public void Third_BTN()
@@ -78,6 +90,7 @@ public class Starting : MonoBehaviour
 {    
     private static bool is_first_start = true;
     [SerializeField] private AudioSource bgm_audiosource;
+    [SerializeField] private Tutorial tutorial;
 
     void Start()
     {
@@ -85,7 +98,7 @@ public class Starting : MonoBehaviour
         bgm_audiosource.Play();
         bgm_audiosource.loop = true;
 
-        IExecutable obj = is_first_start ? new FirstStart() : new LaterStart();
+        IExecutable obj = is_first_start ? new FirstStart(tutorial) : new LaterStart();
         
         Button first_btn = this.gameObject.transform.GetChild(0).gameObject.GetComponent<Button>();
         first_btn.onClick.AddListener(obj.First_BTN);
@@ -100,4 +113,3 @@ public class Starting : MonoBehaviour
         is_first_start = false;
     }
 }
-

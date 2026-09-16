@@ -52,6 +52,7 @@ public class BinManager : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
             return;
         }
         string target_parent_gobj_name = target_parent_gobj.name;
+        print(target_parent_gobj_name);
         if (target_parent_gobj_name.Contains("egg_system"))
         {
             target_parent_gobj.GetComponent<Egg>().ResetEggSystem();

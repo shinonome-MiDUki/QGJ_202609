@@ -28,6 +28,7 @@ public class RaySpreading : BaseMeshEffect
         {
             vh.PopulateUIVertex(ref vert, i);
             var pos = vert.position;
+            pos.x = i == 1 ? -100.0f : 100.0f;
             pos.y = ray_source;
             vert.position = pos;
             vh.SetUIVertex(vert, i);

@@ -1,14 +1,11 @@
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
-using UnityEngine.U2D.IK;
-using Unity.VisualScripting;
 
 public class ShowScore : ScoreSystem
 {
     private TMP_Text money_text;
     private TMP_Text star_text;
-    [SerializeField] private UtilVar utilVar;
 
     void Start()
     {
@@ -46,7 +43,7 @@ public class ShowScore : ScoreSystem
     {
         LoseNEggs(n);
         money_text.text = "残高 : " + current_money.ToString();
-        
+
         if (current_money <= 0.0f)
         {
             UtilVar.is_success = false;

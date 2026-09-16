@@ -9,7 +9,7 @@ public class ScoreSystem : MonoBehaviour
 
     public static float current_money = 500.0f;
     public static int[] current_comments = new int[2]{5, 1};
-    [SerializeField] private UtilVar utilVar;
+    [SerializeField] protected UtilVar utilVar;
 
     protected void SolveResult(
         List<int> ordered_toppings,

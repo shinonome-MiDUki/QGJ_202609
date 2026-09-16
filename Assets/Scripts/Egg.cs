@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 using System;
+using UnityEngine.Rendering.Universal;
 
 public class Egg : MonoBehaviour
 {
@@ -41,7 +42,7 @@ public class Egg : MonoBehaviour
         egg_gobj = this.gameObject.transform.Find("egg").gameObject;
         SwitchEggStatus(EggCommonParam.EggStatusIndex.NO_EGG);
         is_egg_prepared = false;
-        is_new_egg_usable = true;
+        //is_new_egg_usable = true;
         is_cooking[GetMyIdx()] = false;
         is_focused[GetMyIdx()] = false;
         
@@ -53,18 +54,21 @@ public class Egg : MonoBehaviour
         {
             return;
         }
-
-        if (!is_new_egg_usable)
-        {
+        if (is_cooking[GetMyIdx()]){
             return;
         }
+
+        // if (!is_new_egg_usable)
+        // {
+        //     return;
+        // }
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (is_egg_prepared)
             {
                 SwitchEggStatus(EggCommonParam.EggStatusIndex.RAW);
                 is_egg_prepared = false;
-                is_new_egg_usable = false;
+                //is_new_egg_usable = false;
                 is_cooking[GetMyIdx()] = true;
                 showScore.UiLoseNEggs(1);
             }
@@ -140,6 +144,6 @@ public class Egg : MonoBehaviour
             x.SetActive(false);
         }
         is_cooking[GetMyIdx()] = false;
-        is_new_egg_usable = true;
+        //is_new_egg_usable = true;
     }
 }
