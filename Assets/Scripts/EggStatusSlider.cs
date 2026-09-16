@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class EggStatusSlider : Egg
 {
-    [SerializeField] private float play_time = 60.0f;
+    [SerializeField] private UtilVar utilVar;
     private Slider status_slider;
     private float speed_factor;
     
@@ -30,21 +30,21 @@ public class EggStatusSlider : Egg
         {
             return;
         }
-        float standard_increment = Time.deltaTime * (1 / play_time);
+        float standard_increment = Time.deltaTime * (1 / utilVar.play_time);
         status_slider.value += standard_increment * speed_factor;
 
         float current_factor = status_slider.value;
-        if (current_factor >= 0.0f && current_factor < 0.25f && egg_status[GetMyIdx()] != EggStatusIndex.RAW){
-            SwitchEggStatus(EggStatusIndex.RAW);
+        if (current_factor >= 0.0f && current_factor < 0.25f && egg_status[GetMyIdx()] != EggCommonParam.EggStatusIndex.RAW){
+            SwitchEggStatus(EggCommonParam.EggStatusIndex.RAW);
         }
-        else if (current_factor >= 0.25f && current_factor < 0.5f && egg_status[GetMyIdx()] != EggStatusIndex.HALF){
-            SwitchEggStatus(EggStatusIndex.HALF);
+        else if (current_factor >= 0.25f && current_factor < 0.5f && egg_status[GetMyIdx()] != EggCommonParam.EggStatusIndex.HALF){
+            SwitchEggStatus(EggCommonParam.EggStatusIndex.HALF);
         }
-        else if (current_factor >= 0.5f && current_factor < 0.75f && egg_status[GetMyIdx()] != EggStatusIndex.COOKED){
-            SwitchEggStatus(EggStatusIndex.COOKED);
+        else if (current_factor >= 0.5f && current_factor < 0.75f && egg_status[GetMyIdx()] != EggCommonParam.EggStatusIndex.COOKED){
+            SwitchEggStatus(EggCommonParam.EggStatusIndex.COOKED);
         }
-        else if (current_factor >= 0.75f && current_factor < 1.0f && egg_status[GetMyIdx()] != EggStatusIndex.BURNT){
-            SwitchEggStatus(EggStatusIndex.BURNT);
+        else if (current_factor >= 0.75f && current_factor < 1.0f && egg_status[GetMyIdx()] != EggCommonParam.EggStatusIndex.BURNT){
+            SwitchEggStatus(EggCommonParam.EggStatusIndex.BURNT);
         }
         else if (current_factor >= 1.0f){
             is_cooking[GetMyIdx()] = false;

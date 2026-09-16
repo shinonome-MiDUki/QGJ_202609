@@ -8,6 +8,7 @@ public class OrderDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
     private CanvasGroup canvasGroup;
     private Vector3 drag_start_pos;
     [SerializeField] private OrderSpawner orderSpawner;
+    [SerializeField] private ScoreSystem scoreSystem;
 
     private void Awake()
     {
@@ -44,7 +45,18 @@ public class OrderDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
         {
             orderSpawner.PopReceipt(this.name);
             List<int> egg_applied_toppings = target_parent_gobj.GetComponent<Egg>().GetEggSystemInfo().egg_applied_toppings;
-            int egg_final_status = (int)target_parent_gobj.GetComponent<Egg>().GetEggSystemInfo().egg_final_status;
+            int egg_applied_status = (int)target_parent_gobj.GetComponent<Egg>().GetEggSystemInfo().egg_final_status;
+            List<int> egg_ordered_toppings = this.gameObject.GetComponent<Orders>().GetOrderedToppings();
+            int egg_ordered_status = (int) this.gameObject.GetComponent<Orders>().GetOrderedEggStatus();
+            float time_elapsed = this.gameObject.GetComponent<Orders>().StopAndGetTimerTime();
+            scoreSystem.SolveResult(
+                egg_ordered_toppings,
+                egg_applied_toppings,
+                egg_ordered_status,
+                egg_applied_status,
+                time_elapsed
+            );
+            return;
         }
         else
         {

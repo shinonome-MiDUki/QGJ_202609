@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 
 public class ShowScore : MonoBehaviour
 {
-    public bool show_score;
+    private bool is_show_score;
     public float star;
     [SerializeField] private TextMeshProUGUI scoreTextField;
     Dictionary<float, string> starstring = new Dictionary<float, string>()
@@ -33,7 +33,7 @@ public class ShowScore : MonoBehaviour
         {
             float star = PlayerPrefs.GetFloat("star", 0f);
             float money = PlayerPrefs.GetFloat("money", 0f);
-            if (show_score == false)
+            if (is_show_score == false)
             {
                 scoreTextField.text = "所持金: " + money;
             }

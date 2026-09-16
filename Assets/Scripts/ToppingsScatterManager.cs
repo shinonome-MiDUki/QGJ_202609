@@ -5,10 +5,8 @@ using UnityEngine.UI;
 
 public class ToppingsScatterManager : Egg
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected override void Start()
     {
-        //base.Start();
 
         Transform children = this.gameObject.GetComponentInChildren<Transform>();
         if (children.childCount == 0) {
@@ -37,7 +35,7 @@ public class ToppingsScatterManager : Egg
         if (applied_toppings.Contains((int)param.current_active_topping)){
             return;
         }
-        if (egg_status[my_idx] == EggStatusIndex.NO_EGG || egg_status[my_idx] == EggStatusIndex.UNBROKEN)
+        if (egg_status[my_idx] == EggCommonParam.EggStatusIndex.NO_EGG || egg_status[my_idx] == EggCommonParam.EggStatusIndex.UNBROKEN)
         {
             return;
         }

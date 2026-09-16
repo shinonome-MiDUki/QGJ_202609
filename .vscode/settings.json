@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "QGJ_202609.slnx"
+    "dotnet.defaultSolution": "QGJ202609.slnx"
 }

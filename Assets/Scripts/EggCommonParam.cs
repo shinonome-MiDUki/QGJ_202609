@@ -14,6 +14,15 @@ public class EggCommonParam : ScriptableObject
         SYRUP = 4,
         NONE = 5
     };
+    public enum EggStatusIndex
+    {
+        UNBROKEN = 0,
+        RAW = 1,
+        HALF = 2,
+        COOKED = 3,
+        BURNT = 4, 
+        NO_EGG = 5
+    }
     public ToppingsType current_active_topping = ToppingsType.NONE;
     public Sprite[] egg_status_image = new Sprite[5];
 }
