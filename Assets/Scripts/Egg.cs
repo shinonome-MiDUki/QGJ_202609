@@ -1,15 +1,7 @@
 using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System;
-using Microsoft.Unity.VisualStudio.Editor;
-using UnityEngine.UI;
-using UnityEngine.Rendering.Universal;
-using UnityEngine.InputSystem.Controls;
-using NUnit.Framework;
-using Unity.VisualScripting;
-using UnityEditor;
 
 public class Egg : MonoBehaviour
 {
