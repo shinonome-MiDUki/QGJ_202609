@@ -24,7 +24,7 @@ public class Egg : MonoBehaviour
     }
 
     public EggCommonParam param;
-    protected List<int> applied_toppings = new List<int>(); 
+    protected List<int>[] applied_toppings = new List<int>[3]; 
 
     private GameObject egg_gobj;
     private bool is_egg_prepared = false;
@@ -40,6 +40,9 @@ public class Egg : MonoBehaviour
 
     protected virtual void Start()
     {
+        for (int i = 0; i < 3; i++){
+            applied_toppings[i] = new List<int>();
+        }
         egg_gobj = this.gameObject.transform.Find("egg").gameObject;
         SwitchEggStatus(EggCommonParam.EggStatusIndex.NO_EGG);
         is_egg_prepared = false;
@@ -68,7 +71,6 @@ public class Egg : MonoBehaviour
                 is_egg_prepared = false;
                 is_new_egg_usable = false;
                 is_cooking[GetMyIdx()] = true;
-                //StartCoroutine(Timer());
             }
             else
             {
@@ -127,7 +129,7 @@ public class Egg : MonoBehaviour
         EggSystemInfo eggSystemInfo = new EggSystemInfo()
         {
             egg_final_status = egg_status[GetMyIdx()],
-            egg_applied_toppings = applied_toppings
+            egg_applied_toppings = applied_toppings[GetMyIdx()]
         };
         return eggSystemInfo;
     }

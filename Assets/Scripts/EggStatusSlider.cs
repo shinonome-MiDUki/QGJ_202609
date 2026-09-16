@@ -21,6 +21,11 @@ public class EggStatusSlider : Egg
     {
         base.Update();
 
+        if (!is_focused[GetMyIdx()])
+        {
+            return;
+        }
+
         if (!is_cooking[GetMyIdx()])
         {
             return;
@@ -42,7 +47,7 @@ public class EggStatusSlider : Egg
             SwitchEggStatus(EggCommonParam.EggStatusIndex.BURNT);
         }
         else if (current_factor >= 1.0f){
-            
+            is_cooking[GetMyIdx()] = false;
         }
     }
 
