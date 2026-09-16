@@ -24,7 +24,7 @@ public class Egg : MonoBehaviour
     }
 
     public EggCommonParam param;
-    protected List<int>[] applied_toppings = new List<int>[3]; 
+    protected static List<int>[] applied_toppings = new List<int>[3]; 
 
     private GameObject egg_gobj;
     private bool is_egg_prepared = false;
