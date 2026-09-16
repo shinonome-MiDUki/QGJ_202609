@@ -7,7 +7,7 @@ using System;
 public class ScoreSystem : MonoBehaviour
 {
 
-    protected static float current_money = 1000.0f;
+    protected static float current_money = 500.0f;
     protected static int[] current_comments = new int[2]{5, 1};
     [SerializeField] private UtilVar utilVar;
 
@@ -68,9 +68,10 @@ public class ScoreSystem : MonoBehaviour
     )
     {
         float standard_time = (utilVar.play_time / 4) * ordered_status;
-        int multiply = Convert.ToInt32(Math.Floor(waiting_time / standard_time));
-        multiply = Math.Clamp(multiply, 2, 6);
-        int personal_star = 7 - multiply;
+        float multiply = Convert.ToInt32(Math.Floor(waiting_time / standard_time));
+        multiply = Math.Clamp(multiply, 1, 2);
+        int personal_star = (int)Math.Round((5 - ((multiply - 1) * 5)));
+        print(personal_star);
         return personal_star;
     }
 

@@ -31,15 +31,19 @@ public class EggStatusSlider : Egg
 
         float current_factor = status_slider.value;
         if (current_factor >= 0.0f && current_factor < 0.25f && egg_status[GetMyIdx()] != EggCommonParam.EggStatusIndex.RAW){
+            se_audiosource.PlayOneShot(soundAssetRef.egg_status_proceed_se);
             SwitchEggStatus(EggCommonParam.EggStatusIndex.RAW);
         }
         else if (current_factor >= 0.25f && current_factor < 0.5f && egg_status[GetMyIdx()] != EggCommonParam.EggStatusIndex.HALF){
+            se_audiosource.PlayOneShot(soundAssetRef.egg_status_proceed_se);
             SwitchEggStatus(EggCommonParam.EggStatusIndex.HALF);
         }
         else if (current_factor >= 0.5f && current_factor < 0.75f && egg_status[GetMyIdx()] != EggCommonParam.EggStatusIndex.COOKED){
+            se_audiosource.PlayOneShot(soundAssetRef.egg_status_proceed_se);
             SwitchEggStatus(EggCommonParam.EggStatusIndex.COOKED);
         }
         else if (current_factor >= 0.75f && current_factor < 1.0f && egg_status[GetMyIdx()] != EggCommonParam.EggStatusIndex.BURNT){
+            se_audiosource.PlayOneShot(soundAssetRef.egg_status_proceed_se);
             SwitchEggStatus(EggCommonParam.EggStatusIndex.BURNT);
         }
         else if (current_factor >= 1.0f){

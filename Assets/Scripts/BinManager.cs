@@ -8,6 +8,8 @@ public class BinManager : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     [SerializeField] private Sprite bin_opened;
     [SerializeField] private Sprite bin_closed;
     [SerializeField] private ShowScore showScore;
+    [SerializeField] private SoundAssetRef soundAssetRef;
+    [SerializeField] private AudioSource se_audiosource;
     private Vector3 drag_start_pos;
     private CanvasGroup canvasGroup;
 
@@ -61,7 +63,7 @@ public class BinManager : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
             this.transform.position = drag_start_pos;
         }
         this.transform.position = drag_start_pos;
-        
+        se_audiosource.PlayOneShot(soundAssetRef.throw_to_bin_se);
     }
     
 }

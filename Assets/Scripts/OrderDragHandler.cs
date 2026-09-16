@@ -9,6 +9,8 @@ public class OrderDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
     private Vector3 drag_start_pos;
     [SerializeField] private OrderSpawner orderSpawner;
     [SerializeField] private ShowScore showScore;
+    [SerializeField] private SoundAssetRef soundAssetRef;
+    [SerializeField] private AudioSource se_audiosource;
 
     private void Awake()
     {
@@ -50,6 +52,7 @@ public class OrderDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
                 this.transform.position = drag_start_pos;
                 return;
             }
+            target_parent_gobj.GetComponent<Egg>().ResetEggSystem();
             List<int> egg_ordered_toppings = this.gameObject.GetComponent<Orders>().GetOrderedToppings();
             int egg_ordered_status = (int) this.gameObject.GetComponent<Orders>().GetOrderedEggStatus();
             float time_elapsed = this.gameObject.GetComponent<Orders>().StopAndGetTimerTime();
@@ -61,7 +64,7 @@ public class OrderDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
                 egg_applied_status,
                 time_elapsed
             );
-    
+            se_audiosource.PlayOneShot(soundAssetRef.offering_se);
             return;
         }
         else

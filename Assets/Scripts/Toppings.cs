@@ -9,6 +9,9 @@ using Unity.VisualScripting;
 public class Toppings : MonoBehaviour
 {
     public EggCommonParam param;
+    [SerializeField] private SoundAssetRef soundAssetRef;
+    [SerializeField] private AudioSource se_audiosource;
+
     void Start()
     {
         Button topping_btn = this.GetComponent<Button>();
@@ -48,6 +51,7 @@ public class Toppings : MonoBehaviour
 
     private void OnClicked()
     {
+        se_audiosource.PlayOneShot(soundAssetRef.select_topping_se);
         EggCommonParam.ToppingsType clicked_topping = (EggCommonParam.ToppingsType)Enum.Parse(typeof(EggCommonParam.ToppingsType), this.name);
         param.current_active_topping = clicked_topping;        
     }

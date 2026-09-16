@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5c5cfda01ade4e02ba966cf373bd10f, type: 3}
+  m_Name: SoundAssetRef
+  m_EditorClassIdentifier: Assembly-CSharp::SoundAssetRef
+  toppings_tsumugi:
+  - {fileID: 8300000, guid: e6639f35c99eb47188d933d3da661659, type: 3}
+  - {fileID: 8300000, guid: 66840cd4155514084860701b04c49a2f, type: 3}
+  - {fileID: 8300000, guid: 362d72d6f22614996a4fb80b0b59027b, type: 3}
+  - {fileID: 8300000, guid: 9474fa17669f24d04b4d4178444bcf9b, type: 3}
+  - {fileID: 8300000, guid: e1d841bed3efe4552b7c610fb593d764, type: 3}
+  egg_status_tsumugi:
+  - {fileID: 8300000, guid: b43b6523bd7824cf78a6868348ccadfd, type: 3}
+  - {fileID: 8300000, guid: c45ab10ea42424beb90a2c46c67ee6b6, type: 3}
+  - {fileID: 8300000, guid: 9a69906328d8348eca9197a5b2a4c019, type: 3}
+  - {fileID: 8300000, guid: e82d9f6a9e0014d07801b2cf0c68bf45, type: 3}
+  toppings_metan:
+  - {fileID: 8300000, guid: 3d28cae5d572f4f9b8570fb46dd556e5, type: 3}
+  - {fileID: 8300000, guid: 7ed24fbdf883b4e048fb78b4e2557642, type: 3}
+  - {fileID: 8300000, guid: cbf07519956cd437e9816232a41bd2f3, type: 3}
+  - {fileID: 8300000, guid: a7d240dda26d74931a15a437ff3620ef, type: 3}
+  - {fileID: 8300000, guid: e692a3bd092ae47228f3a4076d32baa3, type: 3}
+  egg_status_metan:
+  - {fileID: 8300000, guid: 7e2fc94847b554a6d8fdef29076e76a7, type: 3}
+  - {fileID: 8300000, guid: d8e2a8f9aa5fb44fe8e4ada40177adc6, type: 3}
+  - {fileID: 8300000, guid: e3042b500275c474784f43279cde6508, type: 3}
+  - {fileID: 8300000, guid: dd19a2d64612142cb99e4b170f2d8e96, type: 3}
+  main_bgm: {fileID: 8300000, guid: 1614a0ad9c2bd448d9924da548852eb0, type: 3}
+  toppings_se:
+  - {fileID: 8300000, guid: c142479604a534e0ea20bf96050abada, type: 3}
+  - {fileID: 8300000, guid: 0701786289b3a4d2a8d32e453b0f625a, type: 3}
+  - {fileID: 8300000, guid: 2bbfce78d8e2546ff9c3422450f1a6c4, type: 3}
+  - {fileID: 8300000, guid: c142479604a534e0ea20bf96050abada, type: 3}
+  - {fileID: 8300000, guid: 0701786289b3a4d2a8d32e453b0f625a, type: 3}
+  select_topping_se: {fileID: 8300000, guid: 8f6e9aab9e6c049cbbcbb623ad06ac5a, type: 3}
+  egg_status_proceed_se: {fileID: 8300000, guid: 4ce0eb68aa6264e8ca5285758df6fb42, type: 3}
+  offering_se: {fileID: 8300000, guid: b1105e4565c4f4d22b6c0c1eee7f8fff, type: 3}
+  call_egg_se: {fileID: 8300000, guid: ec22517981db249f4ba6a50d4becd55f, type: 3}
+  throw_to_bin_se: {fileID: 8300000, guid: 8cad967e9ca604089a25da4d61acbc67, type: 3}

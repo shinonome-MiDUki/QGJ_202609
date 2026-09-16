@@ -9,10 +9,12 @@ using UnityEngine.Rendering.Universal;
 using UnityEngine.InputSystem.Controls;
 using NUnit.Framework;
 using Unity.VisualScripting;
+using UnityEditor;
 
 public class Egg : MonoBehaviour
 {
-
+    public SoundAssetRef soundAssetRef;
+    public AudioSource se_audiosource;
     public enum EggStatusIndex
     {
         UNBROKEN = 0,
@@ -76,6 +78,7 @@ public class Egg : MonoBehaviour
             {
                 SwitchEggStatus(EggCommonParam.EggStatusIndex.UNBROKEN);
                 is_egg_prepared = true;
+                se_audiosource.PlayOneShot(soundAssetRef.call_egg_se);
             }
         }
 
@@ -139,14 +142,9 @@ public class Egg : MonoBehaviour
     public void ResetEggSystem(){
         applied_toppings[GetMyIdx()] = new List<int>();
         SwitchEggStatus(EggCommonParam.EggStatusIndex.NO_EGG);
-        GameObject topping_cvs = GameObject.FindWithTag("topping_cvs");
-        if (topping_cvs != null){
-            Transform children = topping_cvs.GetComponentInChildren<Transform>();
-            if (children.childCount > 0) {
-                foreach(Transform ob in children) {
-                    ob.gameObject.SetActive(false);
-                }
-            }
+        GameObject[] topping_gobjs = GameObject.FindGameObjectsWithTag("topping");
+        foreach (GameObject x in topping_gobjs){
+            x.SetActive(false);
         }
         is_cooking[GetMyIdx()] = false;
         is_new_egg_usable = true;

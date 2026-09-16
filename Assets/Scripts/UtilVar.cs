@@ -8,9 +8,9 @@ public class UtilVar : ScriptableObject
     {
        { EggCommonParam.ToppingsType.KETCHUP, "ケチャップ"},
        { EggCommonParam.ToppingsType.MAYONAISE, "マヨネーズ"},
-       { EggCommonParam.ToppingsType.PEPPER, "ブラックペッパー"},
+       { EggCommonParam.ToppingsType.PEPPER, "黒こしょう"},
        { EggCommonParam.ToppingsType.SOYSAUCE, "醤油"},
-       { EggCommonParam.ToppingsType.SYRUP, "シロップ"}
+       { EggCommonParam.ToppingsType.SYRUP, "メープル"}
     };
 
     public Dictionary<EggCommonParam.EggStatusIndex, string> egg_status_name_e2j= new Dictionary<EggCommonParam.EggStatusIndex, string>()

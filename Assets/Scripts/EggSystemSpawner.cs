@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class EggSystemSpawner : MonoBehaviour
 {
-
     [SerializeField] private GameObject egg_system_prefab;
     [SerializeField] private int set_num = 3;
     private List<GameObject> egg_systems;
@@ -30,8 +29,9 @@ public class EggSystemSpawner : MonoBehaviour
                 egg_system_inst.GetComponent<Egg>().SetFocus(false);
             }
         }
-        current_focus_idx= 0;
-        egg_systems[current_focus_idx].GetComponent<Egg>().SetFocus(true);
+        current_focus_idx= 1;
+        SwitchFocus(false);
+        // egg_systems[current_focus_idx].GetComponent<Egg>().SetFocus(true);
     }
 
     void Update()

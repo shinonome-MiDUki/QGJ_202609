@@ -36,7 +36,8 @@ public class ToppingsScatterManager : Egg
         {
             return;
         }
-        if (egg_status[my_idx] == EggCommonParam.EggStatusIndex.NO_EGG || egg_status[my_idx] == EggCommonParam.EggStatusIndex.UNBROKEN)
+        if (egg_status[my_idx] == EggCommonParam.EggStatusIndex.NO_EGG 
+            || egg_status[my_idx] == EggCommonParam.EggStatusIndex.UNBROKEN)
         {
             return;
         }
@@ -52,6 +53,7 @@ public class ToppingsScatterManager : Egg
 
         AddTopping(param.current_active_topping);
         applied_toppings[my_idx].Add((int)param.current_active_topping);
+        se_audiosource.PlayOneShot(soundAssetRef.toppings_se[(int)param.current_active_topping]);
         param.current_active_topping = EggCommonParam.ToppingsType.NONE;
     }
 }
