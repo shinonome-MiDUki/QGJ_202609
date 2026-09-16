@@ -2513,7 +2513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OrderSpawner
   receipt_prefab: {fileID: 124319757}
   max_order_num: 6
-  game_time_lim: 180
+  utilVar: {fileID: 11400000, guid: b970b6f64f623481e89efee769a4196d, type: 2}
   timer_display: {fileID: 741206970}
 --- !u!4 &1881706829
 Transform:

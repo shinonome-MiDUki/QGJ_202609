@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df9472f8d80294a1098fc182d17e64ec, type: 3}
   m_Name: UtilVar
   m_EditorClassIdentifier: Assembly-CSharp::UtilVar
-  egg_cost: 30
+  egg_cost: 100
   play_time: 20
+  game_time_lim: 180

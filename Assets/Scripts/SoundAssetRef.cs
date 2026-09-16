@@ -12,6 +12,9 @@ public class SoundAssetRef : ScriptableObject
      
     [Tooltip("BGM")]
     public AudioClip main_bgm;
+    public AudioClip start_bgm;
+    public AudioClip ending_bgm;
+    public AudioClip game_over_bgmse;
 
     [Tooltip("SE")]
     public AudioClip[] toppings_se = new AudioClip[5];

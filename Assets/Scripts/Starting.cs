@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System.Collections.Generic;
+using System;
 
 
 public interface IExecutable
@@ -76,9 +77,14 @@ public class LaterStart : IExecutable
 public class Starting : MonoBehaviour
 {    
     private static bool is_first_start = true;
+    [SerializeField] private AudioSource bgm_audiosource;
 
     void Start()
     {
+        bgm_audiosource.Stop();
+        bgm_audiosource.Play();
+        bgm_audiosource.loop = true;
+
         IExecutable obj = is_first_start ? new FirstStart() : new LaterStart();
         
         Button first_btn = this.gameObject.transform.GetChild(0).gameObject.GetComponent<Button>();

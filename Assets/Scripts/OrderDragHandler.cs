@@ -45,6 +45,7 @@ public class OrderDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
         string target_parent_gobj_name = target_parent_gobj.name;
         if (target_parent_gobj_name.Contains("egg_system"))
         {
+            print("reacheddd");
             List<int> egg_applied_toppings = target_parent_gobj.GetComponent<Egg>().GetEggSystemInfo().egg_applied_toppings;
             int egg_applied_status = (int)target_parent_gobj.GetComponent<Egg>().GetEggSystemInfo().egg_final_status;
             if (egg_applied_status == 0 || egg_applied_status == 5)

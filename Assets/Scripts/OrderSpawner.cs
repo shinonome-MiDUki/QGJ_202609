@@ -9,7 +9,7 @@ public class OrderSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject receipt_prefab;
     [SerializeField] private int max_order_num = 6;
-    [SerializeField] private float game_time_lim = 180.0f;
+    [SerializeField] private UtilVar utilVar;
     [SerializeField] private TMP_Text timer_display;
     private int current_order_count = 0;
     private int accum_order_count = 0;
@@ -89,7 +89,7 @@ public class OrderSpawner : MonoBehaviour
     IEnumerator GameTimer()
     {
         is_in_game = true;
-        yield return new WaitForSeconds(game_time_lim);
+        yield return new WaitForSeconds(utilVar.game_time_lim);
         is_in_game = false;
         UtilVar.is_success = true;
         UnityEngine.SceneManagement.SceneManager.LoadScene("Ending");
@@ -113,12 +113,12 @@ public class OrderSpawner : MonoBehaviour
 
     IEnumerator GameDisplayer()
     {
-        int timer_counter = (int)game_time_lim;
+        int timer_counter = (int)utilVar.game_time_lim;
         while (!is_in_game)
         {
             yield return null;
         }
-        while (is_in_game || game_time_lim < 0)
+        while (is_in_game || utilVar.game_time_lim < 0)
         {
             timer_display.text = "残り時間 : " + timer_counter.ToString() + " s";
             yield return new WaitForSeconds(1.0f);

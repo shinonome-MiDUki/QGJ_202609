@@ -35,6 +35,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e3042b500275c474784f43279cde6508, type: 3}
   - {fileID: 8300000, guid: dd19a2d64612142cb99e4b170f2d8e96, type: 3}
   main_bgm: {fileID: 8300000, guid: 1614a0ad9c2bd448d9924da548852eb0, type: 3}
+  start_bgm: {fileID: 8300000, guid: c6c398a419c754c08b397a50b89fff37, type: 3}
+  ending_bgm: {fileID: 8300000, guid: a5f34e17cf8c342cf924118e2d9fac4f, type: 3}
+  game_over_bgmse: {fileID: 8300000, guid: b638c5824f6f64c59b6f70099f91d4bb, type: 3}
   toppings_se:
   - {fileID: 8300000, guid: c142479604a534e0ea20bf96050abada, type: 3}
   - {fileID: 8300000, guid: 0701786289b3a4d2a8d32e453b0f625a, type: 3}

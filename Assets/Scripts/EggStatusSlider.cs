@@ -27,7 +27,6 @@ public class EggStatusSlider : Egg
         }
         float standard_increment = Time.deltaTime * (1 / utilVar.play_time);
         status_slider.value += standard_increment * speed_factor[GetMyIdx()];
-        print(speed_factor[GetMyIdx()]); print(";;;;;;");
 
         float current_factor = status_slider.value;
         if (current_factor >= 0.0f && current_factor < 0.25f && egg_status[GetMyIdx()] != EggCommonParam.EggStatusIndex.RAW){

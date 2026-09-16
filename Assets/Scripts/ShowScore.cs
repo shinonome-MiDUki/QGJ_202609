@@ -36,13 +36,6 @@ public class ShowScore : ScoreSystem
             waiting_time
         );
 
-        if (current_money <= 0.0f)
-        {
-            UtilVar.is_success = false;
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Ending");
-            return;
-        }
-
         money_text.text = "残高 : " + current_money.ToString();
         if (current_comments[1] != 0){
             star_text.text = "口コミ : " + ((double)current_comments[0] / current_comments[1]).ToString("F1");
@@ -53,6 +46,13 @@ public class ShowScore : ScoreSystem
     {
         LoseNEggs(n);
         money_text.text = "残高 : " + current_money.ToString();
+        
+        if (current_money <= 0.0f)
+        {
+            UtilVar.is_success = false;
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Ending");
+            return;
+        }
     }
 
 

@@ -22,20 +22,21 @@ public class UtilVar : ScriptableObject
     };
     public Dictionary<EggCommonParam.ToppingsType, float> topping_price = new Dictionary<EggCommonParam.ToppingsType, float>()
     {
-       { EggCommonParam.ToppingsType.KETCHUP, 10.0f},
-       { EggCommonParam.ToppingsType.MAYONAISE, 10.0f},
-       { EggCommonParam.ToppingsType.PEPPER, 10.0f},
-       { EggCommonParam.ToppingsType.SOYSAUCE, 10.0f},
-       { EggCommonParam.ToppingsType.SYRUP, 10.0f}
+       { EggCommonParam.ToppingsType.KETCHUP, 25.0f},
+       { EggCommonParam.ToppingsType.MAYONAISE, 25.0f},
+       { EggCommonParam.ToppingsType.PEPPER, 25.0f},
+       { EggCommonParam.ToppingsType.SOYSAUCE, 25.0f},
+       { EggCommonParam.ToppingsType.SYRUP, 25.0f}
     };
     public Dictionary<EggCommonParam.EggStatusIndex, float> egg_status_price= new Dictionary<EggCommonParam.EggStatusIndex, float>()
     {
-       {EggCommonParam.EggStatusIndex.RAW, 40.0f},
-       {EggCommonParam.EggStatusIndex.HALF, 50.0f},
-       {EggCommonParam.EggStatusIndex.COOKED, 60.0f},
-       {EggCommonParam.EggStatusIndex.BURNT, 30.0f}
+       {EggCommonParam.EggStatusIndex.RAW, 130.0f},
+       {EggCommonParam.EggStatusIndex.HALF, 160.0f},
+       {EggCommonParam.EggStatusIndex.COOKED, 200.0f},
+       {EggCommonParam.EggStatusIndex.BURNT, 100.0f}
     };
     public float egg_cost = 30.0f;
     public float play_time = 60.0f;
+    public float game_time_lim = 180.0f;
     [HideInInspector] public static bool is_success = true;
 }
