@@ -15,5 +15,5 @@ public class EggCommonParam : ScriptableObject
         NONE = 5
     };
     public ToppingsType current_active_topping = ToppingsType.NONE;
-
+    public Sprite[] egg_status_image = new Sprite[5];
 }

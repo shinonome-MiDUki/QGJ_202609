@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.EventSystems;
+
+public class OrderDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+{
+    private CanvasGroup canvasGroup;
+    private Vector3 drag_start_pos;
+    [SerializeField] private OrderSpawner orderSpawner;
+
+    private void Awake()
+    {
+        canvasGroup = GetComponent<CanvasGroup>();
+        if (canvasGroup == null)
+        {
+            canvasGroup = gameObject.AddComponent<CanvasGroup>();
+        }
+    }
+
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        canvasGroup.blocksRaycasts = false;
+        drag_start_pos = this.transform.position;
+    }
+ 
+    public void OnDrag(PointerEventData eventData)
+    {
+        this.transform.position = eventData.position;
+    }
+ 
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        canvasGroup.blocksRaycasts = true;
+        GameObject target_gobj = eventData.pointerEnter;
+        if (target_gobj == null)
+        {
+            this.transform.position = drag_start_pos;
+            return;
+        }
+        GameObject target_parent_gobj = target_gobj.transform.parent.gameObject;
+        string target_parent_gobj_name = target_parent_gobj.name;
+        if (target_parent_gobj_name.Contains("egg_system"))
+        {
+            orderSpawner.PopReceipt(this.name);
+            List<int> egg_applied_toppings = target_parent_gobj.GetComponent<Egg>().GetEggSystemInfo().egg_applied_toppings;
+            int egg_final_status = (int)target_parent_gobj.GetComponent<Egg>().GetEggSystemInfo().egg_final_status;
+        }
+        else
+        {
+            this.transform.position = drag_start_pos;
+            return;
+        }
+    }
+    
+}

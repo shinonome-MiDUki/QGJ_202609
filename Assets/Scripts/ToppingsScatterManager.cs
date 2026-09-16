@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class ToppingsScatterManager : Egg
 {
-    [SerializeField] private EggCommonParam param;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected override void Start()
     {

@@ -8,7 +8,7 @@ using Unity.VisualScripting;
 
 public class Toppings : MonoBehaviour
 {
-    [SerializeField] private EggCommonParam param;
+    public EggCommonParam param;
     void Start()
     {
         Button topping_btn = this.GetComponent<Button>();

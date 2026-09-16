@@ -31,7 +31,7 @@ public class LensOperation : EggStatusSlider
             return;
         }
 
-        if (!(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow)))
+        if (!(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)))
         {
             return;
         }
@@ -44,7 +44,7 @@ public class LensOperation : EggStatusSlider
         RectTransform lens_rt = lens_gobj.GetComponent<RectTransform>();
         Vector3 current_pos = lens_rt.anchoredPosition;
         float height = current_pos.y;
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.W))
         {
             if (height >= 400.0f)
             {
@@ -52,7 +52,7 @@ public class LensOperation : EggStatusSlider
             }
             height += key_sensitivity;
         }
-        else if (Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKey(KeyCode.S))
         {
             if (height <= min_height)
             {

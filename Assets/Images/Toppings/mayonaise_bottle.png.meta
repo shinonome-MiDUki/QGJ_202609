@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dfca776d9774547c69644f0eb7cd93a1
+guid: df70d9bd0e14d49e1ae0ae389f5ce629
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1094045726052670663
-    second: illustkun-02367-mayonnaise_0
+      213: 6115675185144426353
+    second: mayonaise_bottle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: illustkun-02367-mayonnaise_0
+      name: mayonaise_bottle_0
       rect:
         serializedVersion: 2
-        x: 153
-        y: 34
-        width: 204
-        height: 442
+        x: 341
+        y: 246
+        width: 915
+        height: 1967
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7cc57659ac4de2f00800000000000000
-      internalID: 1094045726052670663
+      spriteID: 17f643cbd2e3fd450800000000000000
+      internalID: 6115675185144426353
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      illustkun-02367-mayonnaise_0: 1094045726052670663
+      mayonaise_bottle_0: 6115675185144426353
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

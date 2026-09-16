@@ -21,13 +21,11 @@ public class Egg : MonoBehaviour
         BURNT = 4, 
         NO_EGG = 5
     }
-    [SerializeField] private Sprite[] egg_status_image = new Sprite[5];
+    // [SerializeField] private Sprite[] egg_status_image = new Sprite[5];
+    public EggCommonParam param;
     protected List<int> applied_toppings = new List<int>(); 
     // protected EggStatusIndex egg_status; 
     private float time_elapsed; 
-    private bool is_frypan_available; 
-    private float cooking_speed; 
-    private bool is_toppings_selectable = false;
     private GameObject egg_gobj;
     private bool is_egg_prepared = false;
     private bool is_new_egg_usable = false;
@@ -35,7 +33,11 @@ public class Egg : MonoBehaviour
     protected static bool[] is_cooking = new bool[3];
     public static bool[] is_focused = new bool[3];
     protected static EggStatusIndex[] egg_status = new EggStatusIndex[3]; 
-
+    public struct EggSystemInfo
+    {
+        public EggStatusIndex egg_final_status;
+        public List<int> egg_applied_toppings;
+    }
 
     protected virtual void Start()
     {
@@ -43,7 +45,6 @@ public class Egg : MonoBehaviour
         SwitchEggStatus(EggStatusIndex.NO_EGG);
         is_egg_prepared = false;
         is_new_egg_usable = true;
-        is_toppings_selectable = false;
         is_timer_working = false;
         is_cooking[GetMyIdx()] = false;
         is_focused[GetMyIdx()] = false;
@@ -68,7 +69,6 @@ public class Egg : MonoBehaviour
                 SwitchEggStatus(EggStatusIndex.RAW);
                 is_egg_prepared = false;
                 is_new_egg_usable = false;
-                is_toppings_selectable = false;
                 is_timer_working = true;
                 is_cooking[GetMyIdx()] = true;
                 //StartCoroutine(Timer());
@@ -105,7 +105,7 @@ public class Egg : MonoBehaviour
         else
         {
             egg_img.enabled = true;
-            egg_img.sprite = egg_status_image[(int)new_status];
+            egg_img.sprite = param.egg_status_image[(int)new_status];
             if (egg_rt != null)
             {
                 egg_rt.localScale = new Vector3(0.2f, 0.2f, 0.2f);
@@ -122,5 +122,16 @@ public class Egg : MonoBehaviour
     public bool GetFocusStatus()
     {
         return is_focused[GetMyIdx()];
+    }
+
+    public EggSystemInfo GetEggSystemInfo()
+    {
+      
+        EggSystemInfo eggSystemInfo = new EggSystemInfo()
+        {
+            egg_final_status = egg_status[GetMyIdx()],
+            egg_applied_toppings = applied_toppings
+        };
+        return eggSystemInfo;
     }
 }
