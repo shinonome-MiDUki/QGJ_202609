@@ -127,3 +127,8 @@ InitTestScene*.unity*
 /Assets/**/*.fbx
 /Assets/**/*.png
 /Assets/StreamingAssets/
+/Assets/Fonts/
+/Assets/TextMesh Pro/
+
+/Assets/Fonts.meta
+/Assets/TextMesh Pro.meta
