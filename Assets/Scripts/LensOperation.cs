@@ -6,8 +6,6 @@ public class LensOperation : EggStatusSlider
 {
     [SerializeField] private float max_height = 400.0f;
     [SerializeField] private float min_height = 30.0f;
-    [SerializeField] private float key_sensitivity = 0.6f;
-    [SerializeField] private float factor_sensitivity = 1.0f;
     [SerializeField] private RaySpreading raySpreading;
     
     private GameObject lens_gobj;
@@ -51,7 +49,7 @@ public class LensOperation : EggStatusSlider
             {
                 return;
             }
-            height += key_sensitivity;
+            height += utilVar.key_sensitivity;
         }
         else if (Input.GetKey(KeyCode.S))
         {
@@ -59,7 +57,7 @@ public class LensOperation : EggStatusSlider
             {
                 return;
             }
-            height -= key_sensitivity;
+            height -= utilVar.key_sensitivity;
         }
         lens_rt.anchoredPosition = new Vector3(current_pos.x, height, current_pos.z);
         CookingSpeedControl(height);
@@ -72,7 +70,7 @@ public class LensOperation : EggStatusSlider
         raySpreading.RefreshMesh(height - 200.0f, factor * 3.2f);
 
         factor = Math.Abs(max_height - height) / Math.Abs(max_height - min_height);
-        factor *= factor_sensitivity;
+        factor *= utilVar.factor_sensitivity;
         AdjustCookingSpeed(factor + 1.0f);
     }
 }

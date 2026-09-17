@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: UtilVar
   m_EditorClassIdentifier: Assembly-CSharp::UtilVar
   egg_cost: 100
-  play_time: 20
+  per_egg_time: 60
   game_time_lim: 180
+  key_sensitivity: 6
+  factor_sensitivity: 3

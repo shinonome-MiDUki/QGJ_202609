@@ -1,7 +1,5 @@
-
-using System;
+using System.Collections;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -23,7 +21,8 @@ public class Ending : MonoBehaviour
         {
             bgm_audiosource.clip = soundAssetRef.ending_bgm;
             bgm_audiosource.Play();
-            bgm_audiosource.loop = true;
+            bgm_audiosource.loop = false;
+            StartCoroutine(PlayNextBgm());
             bg.sprite = game_success_sprite;
             result_text.text = "おめでとう!!!\n\n" 
                 + "残高 : " + ScoreSystem.current_money.ToString() + "円\n"
@@ -52,5 +51,15 @@ public class Ending : MonoBehaviour
     #else
             Application.Quit(); // 本番ビルド時はアプリ終了
     #endif
+    }
+
+    IEnumerator PlayNextBgm()
+    {
+        float first_bgm_len = soundAssetRef.ending_bgm.length;
+        yield return new WaitForSeconds(first_bgm_len);
+        bgm_audiosource.Stop();
+        bgm_audiosource.clip = soundAssetRef.ending_loop_bgm;
+        bgm_audiosource.Play();
+        bgm_audiosource.loop = true;
     }
 }

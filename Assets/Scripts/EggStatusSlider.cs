@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class EggStatusSlider : Egg
 {
-    [SerializeField] private UtilVar utilVar;
+    public UtilVar utilVar;
     private Slider status_slider;
     private static float[] speed_factor = new float[3]{1.0f, 1.0f, 1.0f};
     
@@ -25,7 +25,7 @@ public class EggStatusSlider : Egg
             status_slider.value = 0.0f;
             return;
         }
-        float standard_increment = Time.deltaTime * (1 / utilVar.play_time);
+        float standard_increment = Time.deltaTime * (1 / utilVar.per_egg_time);
         status_slider.value += standard_increment * speed_factor[GetMyIdx()];
 
         float current_factor = status_slider.value;

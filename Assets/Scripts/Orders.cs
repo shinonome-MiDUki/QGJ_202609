@@ -131,7 +131,7 @@ public class Orders : MonoBehaviour
         foreach (AudioClip x in narrations)
         {
             se_audiosource.PlayOneShot(x);
-            yield return new WaitForSeconds(0.4f);
+            yield return new WaitForSeconds(x.length + 0.05f);
         }
     }
 }

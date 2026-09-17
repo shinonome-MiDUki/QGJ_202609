@@ -35,6 +35,7 @@ public class OrderDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
     public void OnEndDrag(PointerEventData eventData)
     {
         canvasGroup.blocksRaycasts = true;
+        print(eventData.position);
         GameObject target_gobj = eventData.pointerEnter;
         if (target_gobj == null)
         {

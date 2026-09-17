@@ -73,7 +73,7 @@ public class ScoreSystem : MonoBehaviour
         int ordered_status
     )
     {
-        float standard_time = (utilVar.play_time / 4) * ordered_status;
+        float standard_time = (utilVar.per_egg_time / 4) * ordered_status;
         float multiply = Convert.ToInt32(Math.Floor(waiting_time / standard_time));
         multiply = Math.Clamp(multiply, 1, 2);
         int personal_star = (int)Math.Round((5 - ((multiply - 1) * 5)));

@@ -35,8 +35,17 @@ public class UtilVar : ScriptableObject
        {EggCommonParam.EggStatusIndex.COOKED, 200.0f},
        {EggCommonParam.EggStatusIndex.BURNT, 100.0f}
     };
-    public float egg_cost = 30.0f;
-    public float play_time = 60.0f;
+    public float[][] collision_area =
+   {
+      new[] { 330.0f, 750.0f, 400.0f, 960.0f },
+      new[] { 860.0f, 1280.0f, 400.0f, 960.0f },
+      new[] { 1390.0f, 1810.0f, 400.0f, 960.0f }
+   };
+    public float egg_cost = 100.0f;
+    public float per_egg_time = 60.0f;
     public float game_time_lim = 180.0f;
+    public float key_sensitivity = 0.6f;
+    public float factor_sensitivity = 1.0f;
     [HideInInspector] public static bool is_success = true;
+    
 }
