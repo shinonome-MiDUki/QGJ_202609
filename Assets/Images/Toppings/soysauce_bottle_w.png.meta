@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8e767973e4fb04990b948283e1176ed2
+guid: eb8b6b555d16143d4a33938e9f9654f4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -107712523198209182
-    second: ketchup_w_0
+      213: 1602139960807436877
+    second: soysauce_bottle_w_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ketchup_w_0
+      name: soysauce_bottle_w_0
       rect:
         serializedVersion: 2
-        x: 1545
-        y: 991
-        width: 911
-        height: 1886
+        x: 362
+        y: 534
+        width: 947
+        height: 1424
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 263e8e4e704518ef0800000000000000
-      internalID: -107712523198209182
+      spriteID: d42b26c4ec1fb3610800000000000000
+      internalID: 1602139960807436877
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ketchup_w_0: -107712523198209182
+      soysauce_bottle_w_0: 1602139960807436877
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

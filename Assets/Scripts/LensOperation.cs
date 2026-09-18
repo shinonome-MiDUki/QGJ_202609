@@ -43,6 +43,11 @@ public class LensOperation : EggStatusSlider
         RectTransform lens_rt = lens_gobj.GetComponent<RectTransform>();
         Vector3 current_pos = lens_rt.anchoredPosition;
         float height = current_pos.y;
+
+        if (TutorialMode.is_lock_w_s_key)
+        {
+            return;
+        }
         if (Input.GetKey(KeyCode.W))
         {
             if (height >= 400.0f)

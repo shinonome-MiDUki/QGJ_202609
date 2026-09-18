@@ -3,6 +3,7 @@ using TMPro;
 using System.Collections.Generic;
 using System.Linq;
 using System;
+using Unity.VisualScripting;
 
 public class ScoreSystem : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class ScoreSystem : MonoBehaviour
     public static float current_money = 500.0f;
     public static int[] current_comments = new int[2]{5, 1};
     [SerializeField] protected UtilVar utilVar;
+    [SerializeField] private AudioSource se_audiosource;
+    [SerializeField] private SoundAssetRef soundAssetRef;
 
     protected void SolveResult(
         List<int> ordered_toppings,
@@ -38,6 +41,11 @@ public class ScoreSystem : MonoBehaviour
             }
             EggCommonParam.EggStatusIndex eggStatusIndex = (EggCommonParam.EggStatusIndex)Enum.ToObject(typeof(EggCommonParam.EggStatusIndex), ordered_status);
             income += utilVar.egg_status_price[eggStatusIndex];
+            se_audiosource.PlayOneShot(soundAssetRef.offering_se);
+        }
+        else
+        {
+            se_audiosource.PlayOneShot(soundAssetRef.offering_se);
         }
 
         current_money += income ;
@@ -84,6 +92,12 @@ public class ScoreSystem : MonoBehaviour
     public void LoseNEggs(int n)
     {
         current_money -= utilVar.egg_cost * n;
+    }
+
+    public void LoseRating(int added_rating)
+    {
+        current_comments[0] = current_comments[0] + added_rating;
+        current_comments[1] = current_comments[1] + 1;
     }
 
 }

@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class EggStatusSlider : Egg
 {
-    public UtilVar utilVar;
     private Slider status_slider;
     private static float[] speed_factor = new float[3]{1.0f, 1.0f, 1.0f};
     

@@ -25,5 +25,6 @@ public class EggCommonParam : ScriptableObject
         NO_EGG = 5
     }
     public ToppingsType current_active_topping = ToppingsType.NONE;
+    [HideInInspector] public GameObject current_active_topping_gobj;
     public Sprite[] egg_status_image = new Sprite[5];
 }

@@ -18,8 +18,14 @@ MonoBehaviour:
   - {fileID: -8030488491940948627, guid: 79b4a40c84c614d46a941b1d96839410, type: 3}
   - {fileID: 6115675185144426353, guid: df70d9bd0e14d49e1ae0ae389f5ce629, type: 3}
   - {fileID: -483200118279512870, guid: ce2f40aa0b8a34a6daa14655c0841bcc, type: 3}
-  topping_w_list: []
-  current_active_topping: 5
+  topping_w_list:
+  - {fileID: -3678906497738263989, guid: 9ce21e32566454417b8be868176d55e6, type: 3}
+  - {fileID: 1602139960807436877, guid: eb8b6b555d16143d4a33938e9f9654f4, type: 3}
+  - {fileID: -7851309938123146393, guid: dd3222019ef1d4aa8b1e38e35364d462, type: 3}
+  - {fileID: -8993867431975126939, guid: 7cbec333e11824d7b91f61ab3d810fe2, type: 3}
+  - {fileID: 7944198249094887480, guid: abf47084044b84307b4d1070c366bbe5, type: 3}
+  current_active_topping: 0
+  current_active_topping_gobj: {fileID: 0}
   egg_status_image:
   - {fileID: 21300000, guid: 23d3a8fd02772466291c76c76cc8d967, type: 3}
   - {fileID: 21300000, guid: 730e8ea1fa76a443282f4959798104d9, type: 3}

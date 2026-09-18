@@ -17,14 +17,26 @@ public class Orders : MonoBehaviour
     private bool is_timer_working = false;
     void Start()
     {
-        ordered_egg_status = GetRandomEggStatus();
-        if (ordered_egg_status == EggCommonParam.EggStatusIndex.RAW)
+        if (!TutorialMode.is_tutorial_mode)
         {
-            ordered_toppings_list  = new List<EggCommonParam.ToppingsType>();
+            ordered_egg_status = GetRandomEggStatus();
+            if (ordered_egg_status == EggCommonParam.EggStatusIndex.RAW)
+            {
+                ordered_toppings_list  = new List<EggCommonParam.ToppingsType>();
+            }
+            else
+            {
+                ordered_toppings_list = GetRandomToppingTypes();
+            }
         }
         else
         {
-            ordered_toppings_list = GetRandomToppingTypes();
+            ordered_egg_status = EggCommonParam.EggStatusIndex.BURNT;
+            ordered_toppings_list  = new List<EggCommonParam.ToppingsType>()
+            {
+                EggCommonParam.ToppingsType.KETCHUP,
+                EggCommonParam.ToppingsType.PEPPER
+            };
         }
         TMP_Text order_text = this.transform.Find("order_content").GetComponent<TMP_Text>();
         List<string> topping_list_jpn = new List<string>();
@@ -32,7 +44,14 @@ public class Orders : MonoBehaviour
         {
             topping_list_jpn.Add(utilVar.toppings_name_e2j[x]);
         }
-        order_text.text = utilVar.egg_status_name_e2j[ordered_egg_status]+ "\n\n" + String.Join("\n", topping_list_jpn);
+        if (topping_list_jpn.Count == 5)
+        {
+            order_text.text = utilVar.egg_status_name_e2j[ordered_egg_status]+ "\n\n" + "全部のせ";
+        }
+        else
+        {
+            order_text.text = utilVar.egg_status_name_e2j[ordered_egg_status]+ "\n\n" + String.Join("\n", topping_list_jpn);
+        }
         time_elapsed = 0.0f;
         is_timer_working = true;
 

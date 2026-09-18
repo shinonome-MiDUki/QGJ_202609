@@ -9,7 +9,7 @@ public class Tutorial : MonoBehaviour
     void Start()
     {
         self_img = this.gameObject.GetComponent<UnityEngine.UI.Image>();
-        self_img.enabled = false;
+        this.gameObject.SetActive(false);
     }
 
     void Update()
@@ -42,11 +42,11 @@ public class Tutorial : MonoBehaviour
     {
         current_page = 0;
         self_img.sprite = tutorial_slides[current_page];
-        self_img.enabled = true;
+        this.gameObject.SetActive(true);
     }
 
     public void HideTutorial()
     {
-        self_img.enabled = false;
+        this.gameObject.SetActive(false);
     }
 }

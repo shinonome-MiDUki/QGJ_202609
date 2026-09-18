@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System;
 using UnityEngine.Rendering.Universal;
+using Unity.VisualScripting;
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 
 public class Egg : MonoBehaviour
 {
     public SoundAssetRef soundAssetRef;
     public AudioSource se_audiosource;
     [SerializeField] private ShowScore showScore;
+    [SerializeField] private NoticeAnimation noticeAnimation;
+    public UtilVar utilVar;
     public enum EggStatusIndex
     {
         UNBROKEN = 0,
@@ -44,7 +48,7 @@ public class Egg : MonoBehaviour
         is_egg_prepared = false;
         //is_new_egg_usable = true;
         is_cooking[GetMyIdx()] = false;
-        is_focused[GetMyIdx()] = false;
+        is_focused[GetMyIdx()] = GetMyIdx() == 0 ? true : false;
         
     }
 
@@ -57,20 +61,28 @@ public class Egg : MonoBehaviour
         if (is_cooking[GetMyIdx()]){
             return;
         }
+        if (!this.name.Contains("egg_system"))
+        {
+            return;
+        }
 
         // if (!is_new_egg_usable)
         // {
         //     return;
         // }
+        if (TutorialMode.is_lock_e_key)
+        {
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (is_egg_prepared)
             {
-                SwitchEggStatus(EggCommonParam.EggStatusIndex.RAW);
                 is_egg_prepared = false;
                 //is_new_egg_usable = false;
                 is_cooking[GetMyIdx()] = true;
                 showScore.UiLoseNEggs(1);
+                noticeAnimation.TriggerAnimation("-" + utilVar.egg_cost.ToString());
             }
             else
             {

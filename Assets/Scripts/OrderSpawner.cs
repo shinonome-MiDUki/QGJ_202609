@@ -95,10 +95,18 @@ public class OrderSpawner : MonoBehaviour
         while (is_in_game)
         {
             PopulateReceipt();
-            int random_interval = UnityEngine.Random.Range(
-                min_max_interval[0], min_max_interval[1] + 1
-            );
-            yield return new WaitForSeconds(random_interval);
+            if (TutorialMode.is_tutorial_mode)
+            {
+                yield return new WaitUntil(() => !TutorialMode.is_tutorial_mode);
+                yield return new WaitForSeconds(0.6f);
+            }
+            else
+            {
+                int random_interval = UnityEngine.Random.Range(
+                    min_max_interval[0], min_max_interval[1] + 1
+                );
+                yield return new WaitForSeconds(random_interval);
+            }
         }
     }
 

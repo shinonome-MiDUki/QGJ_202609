@@ -229,6 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ending
   game_over_sprite: {fileID: 4036032302730158127, guid: 276fc62b806bf46bcbde36ae2f2b8000, type: 3}
   game_success_sprite: {fileID: 4370772236825235836, guid: 08de9196ea1364cdf9d538aeac6c8711, type: 3}
+  game_success_withloss_sprite: {fileID: 85006708857510586, guid: 933153f31148a4c15b8bb4f4725c5c2a, type: 3}
   bg: {fileID: 916314699}
   result_text: {fileID: 1662042073}
   bgm_audiosource: {fileID: 1464814591}

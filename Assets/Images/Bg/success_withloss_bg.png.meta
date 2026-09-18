@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1041991a26da14a6db078890e6ddbb3e
+guid: 933153f31148a4c15b8bb4f4725c5c2a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5717448836908932997
-    second: soysauce_w_0
+      213: 85006708857510586
+    second: success_withloss_bg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: soysauce_w_0
+      name: success_withloss_bg_0
       rect:
         serializedVersion: 2
-        x: 1589
-        y: 1392
-        width: 850
-        height: 1351
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58f5d61cc65785f40800000000000000
-      internalID: 5717448836908932997
+      spriteID: aba1afcb6210e2100800000000000000
+      internalID: 85006708857510586
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      soysauce_w_0: 5717448836908932997
+      success_withloss_bg_0: 85006708857510586
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

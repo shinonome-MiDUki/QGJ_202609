@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e9de446ac784c4f3f96c54415264db6a
+guid: 9ce21e32566454417b8be868176d55e6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6316906395489393555
-    second: mayonaise_w_0
+      213: -3678906497738263989
+    second: ketchup_bottle_w_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mayonaise_w_0
+      name: ketchup_bottle_w_0
       rect:
         serializedVersion: 2
-        x: 1521
-        y: 1066
-        width: 915
-        height: 1967
+        x: 316
+        y: 136
+        width: 1010
+        height: 1951
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d6426790a17d558a0800000000000000
-      internalID: -6316906395489393555
+      spriteID: b423f603806e1fcc0800000000000000
+      internalID: -3678906497738263989
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mayonaise_w_0: -6316906395489393555
+      ketchup_bottle_w_0: -3678906497738263989
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

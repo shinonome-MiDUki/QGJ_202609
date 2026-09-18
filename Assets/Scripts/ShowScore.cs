@@ -9,7 +9,7 @@ public class ShowScore : ScoreSystem
 
     void Start()
     {
-        current_money = 500.0f;
+        current_money = UtilVar.init_capital;
         current_comments = new int[2]{5, 1};
         money_text = this.gameObject.transform.GetChild(1).GetComponent<TMP_Text>();
         star_text = this.gameObject.transform.GetChild(2).GetComponent<TMP_Text>();
@@ -52,5 +52,22 @@ public class ShowScore : ScoreSystem
         }
     }
 
+    public void RatingPanalty(int added_rating)
+    {
+        LoseRating(added_rating);
+        star_text.text = "口コミ : " + ((double)current_comments[0] / current_comments[1]).ToString("F1");
+    }
 
+    public float GetCurrent(string mode)
+    {
+        if (mode == "money")
+        {
+            return current_money;
+        }
+        else
+        {
+            float current_rating = (float)current_comments[0] / current_comments[1];
+            return current_rating;
+        }
+    }
 }

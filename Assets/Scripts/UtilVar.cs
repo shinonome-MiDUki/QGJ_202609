@@ -46,6 +46,7 @@ public class UtilVar : ScriptableObject
     public float game_time_lim = 180.0f;
     public float key_sensitivity = 0.6f;
     public float factor_sensitivity = 1.0f;
+    public const float init_capital = 500.0f;
     [HideInInspector] public static bool is_success = true;
     
 }

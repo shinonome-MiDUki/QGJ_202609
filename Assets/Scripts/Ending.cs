@@ -1,12 +1,15 @@
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 
 public class Ending : MonoBehaviour
 {
     [SerializeField] private Sprite game_over_sprite;
     [SerializeField] private Sprite game_success_sprite;
+    [SerializeField] private Sprite game_success_withloss_sprite;
     [SerializeField] private UnityEngine.UI.Image bg;
     [SerializeField] private TMP_Text result_text;
     [SerializeField] private AudioSource bgm_audiosource;
@@ -23,10 +26,21 @@ public class Ending : MonoBehaviour
             bgm_audiosource.Play();
             bgm_audiosource.loop = false;
             StartCoroutine(PlayNextBgm());
-            bg.sprite = game_success_sprite;
-            result_text.text = "おめでとう!!!\n\n" 
-                + "残高 : " + ScoreSystem.current_money.ToString() + "円\n"
-                + "口コミ : " + current_rating.ToString("F1");
+            if (ScoreSystem.current_money > UtilVar.init_capital)
+            {
+                bg.sprite = game_success_sprite;
+                result_text.text = "おめでとう!!!\n\n" 
+                    + "残高 : " + ScoreSystem.current_money.ToString() + "円\n"
+                    + "口コミ : " + current_rating.ToString("F1"); 
+            }
+            else
+            {
+                bg.sprite = game_success_withloss_sprite;
+                result_text.text = "なんとか生き延びた\n\n" 
+                    + "残高 : " + ScoreSystem.current_money.ToString() + "円\n"
+                    + "口コミ : " + current_rating.ToString("F1"); 
+            }
+            
         }
         else
         {

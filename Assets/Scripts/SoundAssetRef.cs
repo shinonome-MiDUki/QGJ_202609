@@ -22,6 +22,7 @@ public class SoundAssetRef : ScriptableObject
     public AudioClip select_topping_se;
     public AudioClip egg_status_proceed_se;
     public AudioClip offering_se;
+    public AudioClip offering_mistaken_se;
     public AudioClip call_egg_se;
     public AudioClip throw_to_bin_se;
     

@@ -34,7 +34,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d8e2a8f9aa5fb44fe8e4ada40177adc6, type: 3}
   - {fileID: 8300000, guid: e3042b500275c474784f43279cde6508, type: 3}
   - {fileID: 8300000, guid: dd19a2d64612142cb99e4b170f2d8e96, type: 3}
-  main_bgm: {fileID: 8300000, guid: 1614a0ad9c2bd448d9924da548852eb0, type: 3}
+  main_bgm: {fileID: 8300000, guid: 05c7203dbe1f3441286d1a16b8044466, type: 3}
   start_bgm: {fileID: 8300000, guid: c6c398a419c754c08b397a50b89fff37, type: 3}
   ending_bgm: {fileID: 8300000, guid: 9ab0c5a6e873b429eb2f42a6739f5e8f, type: 3}
   game_over_bgmse: {fileID: 8300000, guid: b638c5824f6f64c59b6f70099f91d4bb, type: 3}
@@ -48,5 +48,6 @@ MonoBehaviour:
   select_topping_se: {fileID: 8300000, guid: 8f6e9aab9e6c049cbbcbb623ad06ac5a, type: 3}
   egg_status_proceed_se: {fileID: 8300000, guid: 4ce0eb68aa6264e8ca5285758df6fb42, type: 3}
   offering_se: {fileID: 8300000, guid: b1105e4565c4f4d22b6c0c1eee7f8fff, type: 3}
+  offering_mistaken_se: {fileID: 8300000, guid: 79e0146b5bdaf4130ba7b6744bf945d3, type: 3}
   call_egg_se: {fileID: 8300000, guid: ec22517981db249f4ba6a50d4becd55f, type: 3}
   throw_to_bin_se: {fileID: 8300000, guid: 8cad967e9ca604089a25da4d61acbc67, type: 3}

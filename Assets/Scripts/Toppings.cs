@@ -47,15 +47,27 @@ public class Toppings : MonoBehaviour
 
     private void OnClicked()
     {
+        bool is_topping_enum = Enum.TryParse(this.name, out EggCommonParam.ToppingsType clicked_topping);
+        if (!is_topping_enum)
+        {
+            return;
+        }
+
         if (se_audiosource != null && soundAssetRef != null)
         {
             se_audiosource.PlayOneShot(soundAssetRef.select_topping_se);
         }
 
-        if (Enum.TryParse(this.name, out EggCommonParam.ToppingsType clicked_topping))
+        if (param.current_active_topping_gobj != null)
         {
-            param.current_active_topping = clicked_topping;
+            param.current_active_topping_gobj.GetComponent<UnityEngine.UI.Image>().sprite 
+                = param.topping_list[(int)param.current_active_topping];
         }
+        this.gameObject.GetComponent<UnityEngine.UI.Image>().sprite 
+            = param.topping_w_list[(int)clicked_topping];
+        
+        param.current_active_topping_gobj = this.gameObject;
+        param.current_active_topping = clicked_topping;
     }
 
     private void EnterArea(PointerEventData data)
